@@ -2,6 +2,18 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Verifikasi Situs Live di GitHub Pages (HTTP 200)
+
+### Hasil Deployment Publik
+- Situs akademik telah berstatus aktif dan dapat diakses publik pada domain utama: `https://wh-sugiharto.github.io` (HTTP/2 200).
+- Seluruh endpoint halaman dan data telah teruji berhasil dimuat:
+  - Beranda (`index.html`): HTTP 200
+  - Perkuliahan (`courses.html`): HTTP 200
+  - Skripsi Bimbingan (`theses.html`): HTTP 200
+  - Penelitian (`research.html`): HTTP 200
+  - Basis Data Statis (`data/profile.json`, `data/courses.json`, `data/theses.json`, `data/research.json`): HTTP 200
+- Seluruh sistem pencarian dinamis, filter kategori atau status, dan fitur ekspor BibTeX siap digunakan secara mandiri.
+
 ## [2026-11-09] - Konfirmasi Pengubahan Nama Repositori
 
 ### Verifikasi Status Repositori
