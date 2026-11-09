@@ -2,7 +2,7 @@
   {
     "id": "pub-2026-01",
     "title": "A Lightweight Hybrid ViT-GNN Framework for Data-Centric Land Cover Mapping in the Amazon Biome Using Graph Structural Priors",
-    "authors": ["Wibowo Harry Sugiharto", "Collaborators"],
+    "authors": ["Sugiharto, W.H.", "et al."],
     "venue": "Scientific Reports (Nature Portfolio)",
     "year": 2026,
     "category": "Machine Learning & Remote Sensing",
@@ -10,12 +10,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": true,
-    "bibtex": "@article{sugiharto2026lightweight,\n  title={A Lightweight Hybrid ViT-GNN Framework for Data-Centric Land Cover Mapping in the Amazon Biome Using Graph Structural Priors},\n  author={Sugiharto, Wibowo Harry and others},\n  journal={Scientific Reports},\n  year={2026},\n  publisher={Nature Publishing Group}\n}"
+    "bibtex": "@article{sugiharto2026lightweight,\n  title={A Lightweight Hybrid ViT-GNN Framework for Data-Centric Land Cover Mapping in the Amazon Biome Using Graph Structural Priors},\n  author={Sugiharto, W.H. and others},\n  journal={Scientific Reports},\n  year={2026},\n  publisher={Nature Portfolio}\n}"
   },
   {
     "id": "pub-2026-02",
     "title": "An Edge-IoT Water Quality Index (IoT-WQI) for First-Line Screening: Accelerating Computation via Deterministic Mathematical Equations and Grouped AHP",
-    "authors": ["Wibowo Harry Sugiharto", "Achmad Basuki Prasetijo", "Heru Susanto"],
+    "authors": ["Sugiharto, W.H.", "Prasetijo, A.B.", "Susanto, H."],
     "venue": "Scientific Reports (Nature Portfolio)",
     "year": 2026,
     "category": "Internet of Things & Environmental Systems",
@@ -23,12 +23,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": true,
-    "bibtex": "@article{sugiharto2026edge,\n  title={An Edge-IoT Water Quality Index (IoT-WQI) for First-Line Screening: Accelerating Computation via Deterministic Mathematical Equations and Grouped AHP},\n  author={Sugiharto, Wibowo Harry and Prasetijo, Achmad Basuki and Susanto, Heru},\n  journal={Scientific Reports},\n  year={2026},\n  publisher={Nature Publishing Group}\n}"
+    "bibtex": "@article{sugiharto2026edge,\n  title={An Edge-IoT Water Quality Index (IoT-WQI) for First-Line Screening: Accelerating Computation via Deterministic Mathematical Equations and Grouped AHP},\n  author={Sugiharto, W.H. and Prasetijo, A.B. and Susanto, H.},\n  journal={Scientific Reports},\n  year={2026},\n  publisher={Nature Portfolio}\n}"
   },
   {
     "id": "pub-2026-03",
     "title": "Comparative Analysis of Feature Fusion Strategies in a Transformer Encoder, GNN Framework for Amazon Deforestation Detection",
-    "authors": ["Wibowo Harry Sugiharto", "Achmad Basuki Prasetijo", "Heru Susanto"],
+    "authors": ["Sugiharto, W.H.", "Prasetijo, A.B.", "Susanto, H."],
     "venue": "Discover Artificial Intelligence (Springer Nature)",
     "year": 2026,
     "category": "Machine Learning & Remote Sensing",
@@ -36,12 +36,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{sugiharto2026comparative,\n  title={Comparative Analysis of Feature Fusion Strategies in a Transformer Encoder, GNN Framework for Amazon Deforestation Detection},\n  author={Sugiharto, Wibowo Harry and Prasetijo, Achmad Basuki and Susanto, Heru},\n  journal={Discover Artificial Intelligence},\n  year={2026},\n  publisher={Springer}\n}"
+    "bibtex": "@article{sugiharto2026comparative,\n  title={Comparative Analysis of Feature Fusion Strategies in a Transformer Encoder, GNN Framework for Amazon Deforestation Detection},\n  author={Sugiharto, W.H. and Prasetijo, A.B. and Susanto, H.},\n  journal={Discover Artificial Intelligence},\n  year={2026},\n  publisher={Springer Nature}\n}"
   },
   {
     "id": "pub-2026-04",
     "title": "Graph-Informed Temporal Fusion Transformer (GIFT) for Spatio-Temporal Water Quality Classification",
-    "authors": ["Wibowo Harry Sugiharto", "R. Primadasa", "A.C. Murti", "R. Nindyasari", "Heru Susanto"],
+    "authors": ["Sugiharto, W.H.", "Primadasa, R.", "Murti, A.C.", "Nindyasari, R.", "Susanto, H."],
     "venue": "Discover Artificial Intelligence (Springer Nature)",
     "year": 2026,
     "category": "Internet of Things & Environmental Systems",
@@ -49,12 +49,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": true,
-    "bibtex": "@article{sugiharto2026gift,\n  title={Graph-Informed Temporal Fusion Transformer (GIFT) for Spatio-Temporal Water Quality Classification},\n  author={Sugiharto, Wibowo Harry and Primadasa, R. and Murti, A.C. and Nindyasari, R. and Susanto, Heru},\n  journal={Discover Artificial Intelligence},\n  year={2026},\n  publisher={Springer}\n}"
+    "bibtex": "@article{sugiharto2026gift,\n  title={Graph-Informed Temporal Fusion Transformer (GIFT) for Spatio-Temporal Water Quality Classification},\n  author={Sugiharto, W.H. and Primadasa, R. and Murti, A.C. and Nindyasari, R. and Susanto, H.},\n  journal={Discover Artificial Intelligence},\n  year={2026},\n  publisher={Springer Nature}\n}"
   },
   {
     "id": "pub-2026-05",
     "title": "Explainable AI with Dual-Layer Validation Framework for Ensuring Noise Resilience and Physical Consistency in Low-Cost Sustainable Water Quality Monitoring",
-    "authors": ["Wibowo Harry Sugiharto", "Collaborators"],
+    "authors": ["Sugiharto, W.H.", "et al."],
     "venue": "Discover Sustainability (Springer Nature)",
     "year": 2026,
     "category": "Explainable AI & Environmental Systems",
@@ -62,12 +62,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": true,
-    "bibtex": "@article{sugiharto2026explainable,\n  title={Explainable AI with Dual-Layer Validation Framework for Ensuring Noise Resilience and Physical Consistency in Low-Cost Sustainable Water Quality Monitoring},\n  author={Sugiharto, Wibowo Harry and others},\n  journal={Discover Sustainability},\n  year={2026},\n  publisher={Springer}\n}"
+    "bibtex": "@article{sugiharto2026explainable,\n  title={Explainable AI with Dual-Layer Validation Framework for Ensuring Noise Resilience and Physical Consistency in Low-Cost Sustainable Water Quality Monitoring},\n  author={Sugiharto, W.H. and others},\n  journal={Discover Sustainability},\n  year={2026},\n  publisher={Springer Nature}\n}"
   },
   {
     "id": "pub-2026-06",
     "title": "Time-Series Visibility Graph and Histogram-Based Gradient Boosting Regressor (TSVG-HGBR) for Robust Multi-Horizon Urban Carbon Monoxide Forecasting",
-    "authors": ["Wibowo Harry Sugiharto", "A. Bardadi", "M.I. Ghozali", "H. Sukri", "A.C. Murti"],
+    "authors": ["Sugiharto, W.H.", "Bardadi, A.", "Ghozali, M.I.", "Sukri, H.", "Murti, A.C."],
     "venue": "Discover Artificial Intelligence (Springer Nature)",
     "year": 2026,
     "category": "Sensors & Telemetry",
@@ -75,12 +75,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{sugiharto2026tsvg,\n  title={Time-Series Visibility Graph and Histogram-Based Gradient Boosting Regressor (TSVG-HGBR) for Robust Multi-Horizon Urban Carbon Monoxide Forecasting},\n  author={Sugiharto, Wibowo Harry and Bardadi, A. and Ghozali, M.I. and Sukri, H. and Murti, A.C.},\n  journal={Discover Artificial Intelligence},\n  volume={6},\n  number={1207},\n  year={2026},\n  publisher={Springer}\n}"
+    "bibtex": "@article{sugiharto2026tsvg,\n  title={Time-Series Visibility Graph and Histogram-Based Gradient Boosting Regressor (TSVG-HGBR) for Robust Multi-Horizon Urban Carbon Monoxide Forecasting},\n  author={Sugiharto, W.H. and Bardadi, A. and Ghozali, M.I. and Sukri, H. and Murti, A.C.},\n  journal={Discover Artificial Intelligence},\n  volume={6},\n  number={1207},\n  year={2026},\n  publisher={Springer Nature}\n}"
   },
   {
     "id": "pub-2025-01",
     "title": "Evaluating Polynomial and Gaussian Fitting Techniques for Accurate Sub-Index pH Modeling in Water Quality Index Development",
-    "authors": ["Wibowo Harry Sugiharto", "Heru Susanto", "Achmad Basuki Prasetijo"],
+    "authors": ["Sugiharto, W.H.", "Susanto, H.", "Prasetijo, A.B."],
     "venue": "Discover Water (Springer Nature)",
     "year": 2025,
     "category": "Internet of Things & Environmental Systems",
@@ -88,12 +88,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{sugiharto2025evaluating,\n  title={Evaluating Polynomial and Gaussian Fitting Techniques for Accurate Sub-Index pH Modeling in Water Quality Index Development},\n  author={Sugiharto, Wibowo Harry and Susanto, Heru and Prasetijo, Achmad Basuki},\n  journal={Discover Water},\n  volume={5},\n  number={1},\n  year={2025},\n  publisher={Springer}\n}"
+    "bibtex": "@article{sugiharto2025evaluating,\n  title={Evaluating Polynomial and Gaussian Fitting Techniques for Accurate Sub-Index pH Modeling in Water Quality Index Development},\n  author={Sugiharto, W.H. and Susanto, H. and Prasetijo, A.B.},\n  journal={Discover Water},\n  volume={5},\n  number={1},\n  year={2025},\n  publisher={Springer Nature}\n}"
   },
   {
     "id": "pub-2025-02",
     "title": "Interval Type-2 Fuzzy C-Means (IT2FCM) for Robust Forecasting of Carbon Monoxide Concentrations in Urban Air Quality Monitoring",
-    "authors": ["A. Bardadi", "B. Warsito", "B. Surarso", "Wibowo Harry Sugiharto"],
+    "authors": ["Bardadi, A.", "Warsito, B.", "Surarso, B.", "Sugiharto, W.H."],
     "venue": "Mathematical Modelling of Engineering Problems",
     "year": 2025,
     "category": "Sensors & Telemetry",
@@ -101,12 +101,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{bardadi2025interval,\n  title={Interval Type-2 Fuzzy C-Means (IT2FCM) for Robust Forecasting of Carbon Monoxide Concentrations in Urban Air Quality Monitoring},\n  author={Bardadi, A. and Warsito, B. and Surarso, B. and Sugiharto, Wibowo Harry},\n  journal={Mathematical Modelling of Engineering Problems},\n  volume={12},\n  number={6},\n  pages={2021--2030},\n  year={2025}\n}"
+    "bibtex": "@article{bardadi2025interval,\n  title={Interval Type-2 Fuzzy C-Means (IT2FCM) for Robust Forecasting of Carbon Monoxide Concentrations in Urban Air Quality Monitoring},\n  author={Bardadi, A. and Warsito, B. and Surarso, B. and Sugiharto, W.H.},\n  journal={Mathematical Modelling of Engineering Problems},\n  volume={12},\n  number={6},\n  pages={2021--2030},\n  year={2025}\n}"
   },
   {
     "id": "pub-2025-03",
     "title": "Managing Partitioning Uncertainty and Transition Ambiguity in Fuzzy Time Series: A Robust IT2FCM-Markov Chain Approach",
-    "authors": ["A. Bardadi", "B. Warsito", "B. Surarso", "Wibowo Harry Sugiharto"],
+    "authors": ["Bardadi, A.", "Warsito, B.", "Surarso, B.", "Sugiharto, W.H."],
     "venue": "Mathematical Modelling of Engineering Problems",
     "year": 2025,
     "category": "Sensors & Telemetry",
@@ -114,12 +114,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{bardadi2025managing,\n  title={Managing Partitioning Uncertainty and Transition Ambiguity in Fuzzy Time Series: A Robust IT2FCM-Markov Chain Approach},\n  author={Bardadi, A. and Warsito, B. and Surarso, B. and Sugiharto, Wibowo Harry},\n  journal={Mathematical Modelling of Engineering Problems},\n  volume={12},\n  number={12},\n  pages={4406--4412},\n  year={2025}\n}"
+    "bibtex": "@article{bardadi2025managing,\n  title={Managing Partitioning Uncertainty and Transition Ambiguity in Fuzzy Time Series: A Robust IT2FCM-Markov Chain Approach},\n  author={Bardadi, A. and Warsito, B. and Surarso, B. and Sugiharto, W.H.},\n  journal={Mathematical Modelling of Engineering Problems},\n  volume={12},\n  number={12},\n  pages={4406--4412},\n  year={2025}\n}"
   },
   {
     "id": "pub-2024-01",
     "title": "Evaluating Polynomial and Gaussian Approaches for Temperature Change Sub Index of Water Quality Index for Smart Environmental Management",
-    "authors": ["Wibowo Harry Sugiharto", "Heru Susanto", "Achmad Basuki Prasetijo"],
+    "authors": ["Sugiharto, W.H.", "Susanto, H.", "Prasetijo, A.B."],
     "venue": "Mathematical Modelling of Engineering Problems",
     "year": 2024,
     "category": "Internet of Things & Environmental Systems",
@@ -127,12 +127,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{sugiharto2024evaluating,\n  title={Evaluating Polynomial and Gaussian Approaches for Temperature Change Sub Index of Water Quality Index for Smart Environmental Management},\n  author={Sugiharto, Wibowo Harry and Susanto, Heru and Prasetijo, Achmad Basuki},\n  journal={Mathematical Modelling of Engineering Problems},\n  volume={11},\n  number={9},\n  pages={2425--2436},\n  year={2024}\n}"
+    "bibtex": "@article{sugiharto2024evaluating,\n  title={Evaluating Polynomial and Gaussian Approaches for Temperature Change Sub Index of Water Quality Index for Smart Environmental Management},\n  author={Sugiharto, W.H. and Susanto, H. and Prasetijo, A.B.},\n  journal={Mathematical Modelling of Engineering Problems},\n  volume={11},\n  number={9},\n  pages={2425--2436},\n  year={2024}\n}"
   },
   {
     "id": "pub-2024-02",
     "title": "Selecting IoT-Enabled Water Quality Index Parameters for Smart Environmental Management",
-    "authors": ["Wibowo Harry Sugiharto", "Heru Susanto", "Achmad Basuki Prasetijo"],
+    "authors": ["Sugiharto, W.H.", "Susanto, H.", "Prasetijo, A.B."],
     "venue": "Instrumentation Mesure Métrologie",
     "year": 2024,
     "category": "Internet of Things & Environmental Systems",
@@ -140,12 +140,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{sugiharto2024selecting,\n  title={Selecting IoT-Enabled Water Quality Index Parameters for Smart Environmental Management},\n  author={Sugiharto, Wibowo Harry and Susanto, Heru and Prasetijo, Achmad Basuki},\n  journal={Instrumentation Mesure Métrologie},\n  volume={23},\n  number={4},\n  pages={253--263},\n  year={2024}\n}"
+    "bibtex": "@article{sugiharto2024selecting,\n  title={Selecting IoT-Enabled Water Quality Index Parameters for Smart Environmental Management},\n  author={Sugiharto, W.H. and Susanto, H. and Prasetijo, A.B.},\n  journal={Instrumentation Mesure Métrologie},\n  volume={23},\n  number={4},\n  pages={253--263},\n  year={2024}\n}"
   },
   {
     "id": "pub-2023-01",
     "title": "Real-Time Water Quality Assessment via IoT: Monitoring pH, TDS, Temperature, and Turbidity",
-    "authors": ["Wibowo Harry Sugiharto", "Heru Susanto", "Achmad Basuki Prasetijo"],
+    "authors": ["Sugiharto, W.H.", "Susanto, H.", "Prasetijo, A.B."],
     "venue": "Ingénierie des Systèmes d'Information",
     "year": 2023,
     "category": "Internet of Things & Environmental Systems",
@@ -153,12 +153,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@article{sugiharto2023realtime,\n  title={Real-Time Water Quality Assessment via IoT: Monitoring pH, TDS, Temperature, and Turbidity},\n  author={Sugiharto, Wibowo Harry and Susanto, Heru and Prasetijo, Achmad Basuki},\n  journal={Ingénierie des Systèmes d'Information},\n  volume={28},\n  number={4},\n  pages={823--831},\n  year={2023}\n}"
+    "bibtex": "@article{sugiharto2023realtime,\n  title={Real-Time Water Quality Assessment via IoT: Monitoring pH, TDS, Temperature, and Turbidity},\n  author={Sugiharto, W.H. and Susanto, H. and Prasetijo, A.B.},\n  journal={Ingénierie des Systèmes d'Information},\n  volume={28},\n  number={4},\n  pages={823--831},\n  year={2023}\n}"
   },
   {
     "id": "pub-2021-01",
     "title": "Online Monitoring of Water Pollution Level Based on Dissolved Oxygen (DO) and Biochemical Oxygen Demand (BOD) Using Wireless Sensor System",
-    "authors": ["Wibowo Harry Sugiharto", "Collaborators"],
+    "authors": ["Sugiharto, W.H.", "et al."],
     "venue": "Journal of Physics: Conference Series",
     "year": 2021,
     "category": "Conference Proceedings",
@@ -166,12 +166,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@inproceedings{sugiharto2021online,\n  title={Online Monitoring of Water Pollution Level Based on Dissolved Oxygen (DO) and Biochemical Oxygen Demand (BOD) Using Wireless Sensor System},\n  author={Sugiharto, Wibowo Harry and others},\n  booktitle={Journal of Physics: Conference Series},\n  volume={1943},\n  number={1},\n  pages={012016},\n  year={2021}\n}"
+    "bibtex": "@inproceedings{sugiharto2021online,\n  title={Online Monitoring of Water Pollution Level Based on Dissolved Oxygen (DO) and Biochemical Oxygen Demand (BOD) Using Wireless Sensor System},\n  author={Sugiharto, W.H. and others},\n  booktitle={Journal of Physics: Conference Series},\n  volume={1943},\n  number={1},\n  pages={012016},\n  year={2021}\n}"
   },
   {
     "id": "pub-2021-02",
     "title": "Online Pollution Level Measurement for Water Quality Monitoring System Using Internet of Things",
-    "authors": ["Wibowo Harry Sugiharto", "Collaborators"],
+    "authors": ["Sugiharto, W.H.", "et al."],
     "venue": "Advances in Engineering Research (ICIST 2020)",
     "year": 2021,
     "category": "Conference Proceedings",
@@ -179,12 +179,12 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@inproceedings{sugiharto2021pollution,\n  title={Online Pollution Level Measurement for Water Quality Monitoring System Using Internet of Things},\n  author={Sugiharto, Wibowo Harry and others},\n  booktitle={Advances in Engineering Research},\n  year={2021}\n}"
+    "bibtex": "@inproceedings{sugiharto2021pollution,\n  title={Online Pollution Level Measurement for Water Quality Monitoring System Using Internet of Things},\n  author={Sugiharto, W.H. and others},\n  booktitle={Advances in Engineering Research},\n  year={2021}\n}"
   },
   {
     "id": "pub-2018-01",
     "title": "Web Based Information System of Carbon Monoxide Pollution",
-    "authors": ["Wibowo Harry Sugiharto", "A.A. Riadi", "M.I. Ghozali"],
+    "authors": ["Sugiharto, W.H.", "Riadi, A.A.", "Ghozali, M.I."],
     "venue": "E3S Web of Conferences",
     "year": 2018,
     "category": "Conference Proceedings",
@@ -192,6 +192,6 @@
     "pdfUrl": "",
     "codeUrl": "",
     "featured": false,
-    "bibtex": "@inproceedings{sugiharto2018web,\n  title={Web Based Information System of Carbon Monoxide Pollution},\n  author={Sugiharto, Wibowo Harry and Riadi, A.A. and Ghozali, M.I.},\n  booktitle={E3S Web of Conferences},\n  volume={73},\n  pages={05026},\n  year={2018}\n}"
+    "bibtex": "@inproceedings{sugiharto2018web,\n  title={Web Based Information System of Carbon Monoxide Pollution},\n  author={Sugiharto, W.H. and Riadi, A.A. and Ghozali, M.I.},\n  booktitle={E3S Web of Conferences},\n  volume={73},\n  pages={05026},\n  year={2018}\n}"
   }
 ]
