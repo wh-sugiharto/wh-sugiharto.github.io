@@ -2,6 +2,13 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Konfirmasi Pengubahan Nama Repositori
+
+### Verifikasi Status Repositori
+- Memverifikasi nama repositori resmi: `https://github.com/wh-sugiharto/wh-sugiharto.github.io` kini telah aktif (HTTP 200) tanpa tanda titik.
+- Memverifikasi remote git lokal terhubung secara tepat ke `https://github.com/wh-sugiharto/wh-sugiharto.github.io.git`.
+- Memeriksa ketersediaan domain `https://wh-sugiharto.github.io` yang saat ini menunggu aktivasi konfigurasi GitHub Pages dari menu Settings repository.
+
 ## [2026-11-09] - Sinkronisasi Penuh ke GitHub dan Normalisasi Remote
 
 ### Hasil Pengunggahan (Git Push)
@@ -20,10 +27,6 @@ Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkem
 ### Status Push
 - Pengunggahan seluruh kode proyek berhasil dilakukan ke repositori remote `https://github.com/wh-sugiharto/wh-sugiharto.github.io..git` pada branch `main`.
 - Seluruh berkas (antarmuka Bootstrap, basis data JSON, logika JavaScript, dan dokumentasi) kini telah tersedia di GitHub.
-
-### Catatan Penting Terkait Konvensi GitHub Pages
-- Repositori remote saat ini memiliki nama dengan tanda titik di akhir: `wh-sugiharto.github.io.`.
-- Agar situs dapat diakses langsung pada domain utama `https://wh-sugiharto.github.io` (bukan sub-path atau mengalami galat rute), disarankan untuk mengubah nama repositori di menu Settings GitHub menjadi `wh-sugiharto.github.io` (tanpa tanda titik).
 
 ## [2026-11-09] - Verifikasi Remote Repository dan Pengujian Lokal
 
@@ -72,6 +75,6 @@ Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkem
    - `index.html`: Beranda dengan ringkasan bio profil dan navigasi cepat ke tiga menu utama.
    - `courses.html`: Halaman menu utama 1 untuk perkuliahan yang diampu.
    - `theses.html`: Halaman menu utama 2 untuk proyek skripsi bimbingan dan repositori mahasiswa.
-   - `research.html`: Halaman menu terbaik 3 untuk publikasi penelitian yang dikelompokkan.
+   - `research.html`: Halaman menu utama 3 untuk publikasi penelitian yang dikelompokkan.
 5. **Dokumentasi**:
    - `README.md`: Panduan struktur repositori, konfigurasi aktivasi GitHub Pages, dan tata cara pembaruan data.
