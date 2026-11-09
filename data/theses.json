@@ -1,50 +1,50 @@
 [
   {
-    "id": "th-2024-001",
-    "studentName": "Ahmad Fauzi",
-    "studentId": "200101501",
-    "title": "Automated Code Review Assistant Using Pre-trained Large Language Models",
+    "id": "th-2024-01",
+    "studentName": "Rizki Pratama",
+    "studentId": "202051012",
+    "title": "IoT-Based Multi-Parameter Water Quality Monitoring System Using LoRa Telemetry",
     "year": 2024,
     "status": "Completed",
-    "abstract": "This study evaluates the performance of instruction tuned language models in detecting logic defects and style violations in student programming submissions, achieving an empirical F1 score of 0.84 on benchmark tasks.",
-    "repoUrl": "https://github.com/student-username/thesis-code-review-llm",
-    "demoUrl": "https://code-review-demo.example.edu",
-    "topics": ["Natural Language Processing", "Software Engineering", "LLM"]
+    "abstract": "Design and field implementation of an energy efficient long range wireless telemetry station measuring water pH, TDS, and turbidity in agricultural irrigation canals.",
+    "repoUrl": "https://github.com/wh-sugiharto/thesis-lora-water-quality",
+    "demoUrl": "https://water-telemetry.example.org",
+    "topics": ["Internet of Things", "LoRa", "Water Quality", "Embedded Systems"]
   },
   {
-    "id": "th-2024-002",
-    "studentName": "Siti Nurhaliza",
-    "studentId": "200101518",
-    "title": "Real-Time Crop Disease Classification on Edge Computing Devices",
+    "id": "th-2024-02",
+    "studentName": "Anisa Rahmawati",
+    "studentId": "202051045",
+    "title": "Real-Time Air Quality and Carbon Monoxide Telemetry Using Edge Filtering",
     "year": 2024,
     "status": "Completed",
-    "abstract": "Development of a lightweight convolutional neural network pipeline optimized for Raspberry Pi and mobile hardware to classify foliar diseases in tropical horticulture crops.",
-    "repoUrl": "https://github.com/student-username/edge-crop-disease-detection",
+    "abstract": "Development of a compact sensor node capable of real time air particulate and carbon monoxide estimation with moving average calibration running locally on microcontroller firmware.",
+    "repoUrl": "https://github.com/wh-sugiharto/thesis-air-quality-node",
     "demoUrl": "",
-    "topics": ["Computer Vision", "Edge Computing", "TensorFlow Lite"]
+    "topics": ["Environmental Sensors", "Edge Computing", "Microcontrollers"]
   },
   {
-    "id": "th-2024-003",
-    "studentName": "Budi Santoso",
-    "studentId": "200101533",
-    "title": "Decentralized Academic Credential Verification via Smart Contracts",
+    "id": "th-2024-03",
+    "studentName": "Dimas Setiawan",
+    "studentId": "202051078",
+    "title": "Web-Based Spatial Dashboard for River Water Quality Index Visualization",
     "year": 2024,
     "status": "Completed",
-    "abstract": "An architectural prototype demonstrating tamper evident digital degree issuance and verification utilizing EVM compatible ledger technology with zero knowledge proofs.",
-    "repoUrl": "https://github.com/student-username/academic-credential-verifier",
-    "demoUrl": "https://credentials-demo.example.edu",
-    "topics": ["Blockchain", "Security", "Smart Contracts"]
+    "abstract": "Interactive geographic information system displaying historical and real time river quality indices derived from decentralized telemetry nodes across the Kudus river basin.",
+    "repoUrl": "https://github.com/wh-sugiharto/thesis-river-wqi-dashboard",
+    "demoUrl": "https://river-wqi.example.org",
+    "topics": ["Web Development", "GIS", "Data Visualization", "IoT"]
   },
   {
-    "id": "th-2025-001",
-    "studentName": "Dewi Lestari",
-    "studentId": "210101602",
-    "title": "Adaptive Assessment Framework for Personalized Programming Pedagogy",
+    "id": "th-2025-01",
+    "studentName": "Farhan Maulana",
+    "studentId": "202151023",
+    "title": "Machine Learning-Based Short-Term Anomaly Detection for Hydroponic Nutrient Sensors",
     "year": 2025,
     "status": "In Progress",
-    "abstract": "An investigation into Bayesian Knowledge Tracing algorithms to dynamically generate targeted programming exercises based on individual cognitive friction points.",
-    "repoUrl": "https://github.com/student-username/adaptive-assessment-framework",
+    "abstract": "Investigating lightweight anomaly detection models (Isolation Forest and Autoencoders) to flag drifting pH and electrical conductivity sensor readings in closed loop hydroponic systems.",
+    "repoUrl": "https://github.com/wh-sugiharto/thesis-hydroponic-anomaly-ml",
     "demoUrl": "",
-    "topics": ["EdTech", "Bayesian Modeling", "Learning Analytics"]
+    "topics": ["Machine Learning", "Hydroponics", "Anomaly Detection"]
   }
 ]

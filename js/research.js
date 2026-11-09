@@ -225,3 +225,4 @@ function escapeHtml(string) {
 }
 
 document.addEventListener("DOMContentLoaded", fetchResearch);
+

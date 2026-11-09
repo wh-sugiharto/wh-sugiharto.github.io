@@ -143,3 +143,4 @@ function escapeHtml(string) {
 }
 
 document.addEventListener("DOMContentLoaded", fetchCourses);
+

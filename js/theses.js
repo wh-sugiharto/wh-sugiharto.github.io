@@ -164,3 +164,4 @@ function escapeHtml(string) {
 }
 
 document.addEventListener("DOMContentLoaded", fetchTheses);
+

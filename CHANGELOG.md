@@ -2,6 +2,21 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Personalisasi Profil dan Penambahan Fitur Dinamis Beranda
+
+### Pembaruan Profil & Konfigurasi Repositori
+- Memperbarui identitas akademik pada `data/profile.json` dengan data Dr. Ir. Wibowo Harry Sugiharto, S.Kom., M.Kom. dari Universitas Muria Kudus (UMK).
+- Menghubungkan profil dengan tautan GitHub resmi (`https://github.com/wh-sugiharto`) dan repositori `wh-sugiharto.github.io`.
+- Mengonfigurasi `git remote origin` ke `https://github.com/wh-sugiharto/wh-sugiharto.github.io.git`.
+- Menyesuaikan topik perkuliahan pada `data/courses.json` ke ranah Internet of Things (IoT), Jaringan Komputer, dan Pembelajaran Mesin.
+- Menyesuaikan proyek skripsi mahasiswa bimbingan pada `data/theses.json` ke topik telemetri sensor lingkungan, LoRa, dan pemantauan kualitas air.
+- Menyesuaikan publikasi penelitian pada `data/research.json` ke bidang IoT dan penilaian kualitas air (Water Quality Index).
+
+### Peningkatan Antarmuka Beranda
+- Menambahkan skrip `js/home.js` yang secara otomatis menampilkan ringkasan publikasi unggulan terbaru, mata kuliah aktif, dan skripsi mahasiswa terkini langsung di `index.html`.
+- Menambahkan dukungan penanganan wadah foto avatar pada `js/common.js`.
+- Memastikan tidak ada penggunaan em dash atau simbol panah pada seluruh markup dan teks sesuai aturan penulisan.
+
 ## [2026-11-09] - Pembuatan Struktur Lengkap dan Antarmuka Bootstrap
 
 ### Keputusan Arsitektur
@@ -20,6 +35,7 @@ Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkem
    - `js/courses.js`: Rendering daftar kuliah, pencarian dinamis, dan filter status semester.
    - `js/theses.js`: Rendering data skripsi mahasiswa, filter tahun, filter status pengerjaan, dan pencarian kata kunci.
    - `js/research.js`: Rendering publikasi yang dikelompokkan berdasarkan topik atau tahun, pencarian, dan fitur salin BibTeX.
+   - `js/home.js`: Rendering sorotan terbaru pada beranda.
 3. **Gaya dan Tata Letak (`css/`)**:
    - `css/style.css`: Penyesuaian tipografi, kartu profil, badge topik, dan kotak kutipan BibTeX.
 4. **Halaman HTML**:

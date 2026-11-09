@@ -51,3 +51,4 @@ To add or modify data:
 - Edit `data/courses.json` to add new courses or repository links.
 - Edit `data/theses.json` to add new student thesis repositories.
 - Edit `data/research.json` to add new papers and BibTeX citations.
+

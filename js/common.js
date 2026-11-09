@@ -40,6 +40,23 @@ function populateProfileData(profile) {
     currentYearSpan.textContent = new Date().getFullYear();
   }
 
+  // Menangani avatar foto profil jika tersedia
+  const avatarContainer = document.getElementById("profile-avatar-container");
+  if (avatarContainer) {
+    if (profile.avatarUrl && profile.avatarUrl.trim() !== "") {
+      avatarContainer.innerHTML = `
+        <img src="${escapeHtml(profile.avatarUrl)}" alt="${escapeHtml(profile.name)}" 
+             class="rounded-circle img-thumbnail" style="width: 120px; height: 120px; object-fit: cover;">
+      `;
+    } else {
+      avatarContainer.innerHTML = `
+        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+          <i class="bi bi-person-fill display-4"></i>
+        </div>
+      `;
+    }
+  }
+
   // Memperbarui elemen profil pada halaman indeks jika ada
   const nameEl = document.getElementById("profile-name");
   if (nameEl) nameEl.textContent = profile.name;
@@ -92,6 +109,17 @@ function setActiveNavLink() {
       link.removeAttribute("aria-current");
     }
   });
+}
+
+// Sanitasi karakter khusus teks
+function escapeHtml(string) {
+  if (!string) return "";
+  return String(string)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 // Menjalankan inisialisasi saat dokumen selesai dimuat

@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="courses.html">Teaching</a>
@@ -47,7 +47,7 @@
       <!-- Kolom Kiri: Profil Singkat -->
       <div class="col-lg-4">
         <div class="card profile-card p-4">
-          <div class="text-center mb-3">
+          <div class="text-center mb-3" id="profile-avatar-container">
             <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
               <i class="bi bi-person-fill display-4"></i>
             </div>
@@ -83,12 +83,12 @@
         </div>
       </div>
 
-      <!-- Kolom Kanan: Tiga Bagian Utama Portal -->
+      <!-- Kolom Kanan: Tiga Bagian Utama Portal dan Pratinjau -->
       <div class="col-lg-8">
         <div class="mb-4">
           <h2 class="h4 fw-bold text-dark mb-2">Welcome</h2>
           <p class="text-secondary">
-            This repository based website documents academic courses, undergraduate student thesis projects, and ongoing scientific research publications.
+            This repository based website documents academic courses, undergraduate student thesis projects, and scientific research publications.
           </p>
         </div>
 
@@ -103,7 +103,7 @@
                 </div>
                 <h6 class="fw-bold mb-1">Teaching</h6>
                 <p class="small text-muted flex-grow-1 mb-3">
-                  Undergraduate and graduate course syllabi with links to dedicated learning repositories.
+                  Course syllabi with direct links to dedicated learning repositories.
                 </p>
                 <a href="courses.html" class="btn btn-sm btn-outline-primary mt-auto">
                   View Courses
@@ -121,7 +121,7 @@
                 </div>
                 <h6 class="fw-bold mb-1">Supervised Theses</h6>
                 <p class="small text-muted flex-grow-1 mb-3">
-                  Student graduation projects, abstracts, and links to open source student repositories.
+                  Undergraduate thesis projects, abstracts, and open student code repositories.
                 </p>
                 <a href="theses.html" class="btn btn-sm btn-outline-success mt-auto">
                   View Theses
@@ -139,7 +139,7 @@
                 </div>
                 <h6 class="fw-bold mb-1">Research</h6>
                 <p class="small text-muted flex-grow-1 mb-3">
-                  Peer reviewed publications, grouped by domain, with open access PDF links and code repositories.
+                  Peer reviewed publications grouped by domain, with open access links and BibTeX.
                 </p>
                 <a href="research.html" class="btn btn-sm btn-outline-dark mt-auto">
                   View Research
@@ -149,11 +149,46 @@
           </div>
         </div>
 
+        <!-- Pratinjau Sorotan Terbaru -->
+        <div class="row g-4 mb-4">
+          <!-- Publikasi Unggulan Terbaru -->
+          <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="fw-bold text-dark mb-0">Featured Research</h5>
+              <a href="research.html" class="small text-decoration-none">All Publications</a>
+            </div>
+            <div id="home-featured-research">
+              <div class="text-muted small py-2">Loading highlights...</div>
+            </div>
+          </div>
+
+          <!-- Kolom Kembar: Kuliah Aktif dan Skripsi Terkini -->
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="fw-bold text-dark mb-0">Active Courses</h6>
+              <a href="courses.html" class="small text-decoration-none">View All</a>
+            </div>
+            <div id="home-active-courses">
+              <div class="text-muted small py-2">Loading active courses...</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="fw-bold text-dark mb-0">Recent Theses</h6>
+              <a href="theses.html" class="small text-decoration-none">View All</a>
+            </div>
+            <div id="home-recent-theses">
+              <div class="text-muted small py-2">Loading recent theses...</div>
+            </div>
+          </div>
+        </div>
+
         <!-- Catatan Mengenai Sumber Data -->
         <div class="card bg-light border-0 p-3">
           <h6 class="fw-bold text-dark mb-1">Data Storage Note</h6>
           <p class="small text-secondary mb-0">
-            All records on this site are stored in structured JSON files within the <code>data/</code> folder. You can add, edit, or remove entries directly through GitHub commits without recompiling binaries.
+            All records on this site are stored in structured JSON files within the <code>data/</code> directory. You can add, edit, or remove entries directly through GitHub commits without recompiling binaries.
           </p>
         </div>
       </div>
@@ -170,5 +205,6 @@
   <!-- Skrip JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
