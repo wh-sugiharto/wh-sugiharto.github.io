@@ -121,3 +121,4 @@ async function loadRecentTheses() {
 }
 
 document.addEventListener("DOMContentLoaded", loadHomeHighlights);
+
