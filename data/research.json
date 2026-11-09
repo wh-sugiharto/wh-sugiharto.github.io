@@ -84,6 +84,20 @@
     "bibtex": "@article{sugiharto2026tsvg,\n  title={Time-Series Visibility Graph and Histogram-Based Gradient Boosting Regressor (TSVG-HGBR) for Robust Multi-Horizon Urban Carbon Monoxide Forecasting},\n  author={Sugiharto, W.H. and Bardadi, A. and Ghozali, M.I. and Sukri, H. and Murti, A.C.},\n  journal={Discover Artificial Intelligence},\n  volume={6},\n  number={1207},\n  year={2026},\n  publisher={Springer Nature}\n}"
   },
   {
+    "id": "pub-2026-07",
+    "title": "Forecasting Urban Carbon Monoxide Concentrations Using a Hybrid ResNet Transformer with STL Decomposition",
+    "authors": ["Sugiharto, W.H.", "et al."],
+    "venue": "Discover Sustainability (Springer Nature)",
+    "year": 2026,
+    "category": "Air",
+    "quartile": "Q1",
+    "doi": "https://doi.org/10.1007/s43621-026-05283-2",
+    "pdfUrl": "",
+    "codeUrl": "",
+    "featured": true,
+    "bibtex": "@article{sugiharto2026forecasting,\n  title={Forecasting Urban Carbon Monoxide Concentrations Using a Hybrid ResNet Transformer with STL Decomposition},\n  author={Sugiharto, W.H. and others},\n  journal={Discover Sustainability},\n  year={2026},\n  publisher={Springer Nature}\n}"
+  },
+  {
     "id": "pub-2025-01",
     "title": "Evaluating Polynomial and Gaussian Fitting Techniques for Accurate Sub-Index pH Modeling in Water Quality Index Development",
     "authors": ["Sugiharto, W.H.", "Susanto, H.", "Prasetijo, A.B."],

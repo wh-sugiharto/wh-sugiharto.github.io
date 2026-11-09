@@ -2,6 +2,14 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Pembaruan Artikel Terbit Baru Q1 di Discover Sustainability
+
+### Sinkronisasi Publikasi (`data/research.json`, `cv.html`, `_agent/logs/CV_DrWibowo.md`)
+- Menambahkan artikel jurnal yang baru terbit: "Forecasting Urban Carbon Monoxide Concentrations Using a Hybrid ResNet Transformer with STL Decomposition" pada jurnal *Discover Sustainability* (Springer Nature), DOI: `10.1007/s43621-026-05283-2`.
+- Mengklasifikasikannya ke dalam domain `Air` dengan status kuartil Scopus `Q1`.
+- Memperbarui daftar publikasi pada CV web (`cv.html`) serta dokumen CV internal (`_agent/logs/CV_DrWibowo.md`) dengan memindahkannya dari status naskah dalam telaah ke daftar artikel jurnal terbit resmi.
+- Melakukan push pembaruan pada kedua repositori: `_research` dan `wh-sugiharto.github.io`.
+
 ## [2026-11-09] - Penambahan Lencana Kuartil Scopus (Q1, Q2, Q3, Q4, No-Q) pada Publikasi
 
 ### Peningkatan Visual dan Pencarian Publikasi (`data/research.json`, `js/research.js`)
