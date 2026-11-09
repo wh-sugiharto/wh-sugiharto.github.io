@@ -2,6 +2,12 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Penambahan Peta Situs (Sitemap) dan Halaman Fallback 404
+
+### Peningkatan Ketahanan dan Pengindeksan Web
+- Menambahkan `sitemap.xml` yang mendaftarkan seluruh rute publik situs (`index.html`, `courses.html`, `theses.html`, `research.html`, dan `cv.html`) untuk memudahkan crawler mesin pencari (Google Scholar, Bing, DuckDuckGo).
+- Menambahkan halaman fallback `404.html` berdesain Bootstrap 5.3 yang serasi dengan tautan kembali ke beranda saat pengunjung mengakses URL yang salah.
+
 ## [2026-11-09] - Penyesuaian Mata Kuliah yang Diampu (1 Repo, 2 MK)
 
 ### Pembaruan Data Perkuliahan (`data/courses.json`)
