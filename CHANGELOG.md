@@ -2,6 +2,13 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Penyederhanaan Halaman Beranda (Negative Space & Fokus Portofolio)
+
+### Penataan Tata Letak Beranda (`index.html`)
+- Mengubah judul kartu menu pertama menjadi `Courses` agar selaras dengan materi ajar.
+- Menghapus bagian sorotan teknis redundan dan catatan database di bagian bawah kolom beranda untuk memberikan ruang bernafas yang lapang dan fokus visual yang jelas pada 3 menu utama (Courses, Supervised Theses, dan Research).
+- Menyinkronkan seluruh perubahan ke branch `main` repositori GitHub.
+
 ## [2026-11-09] - Pembatalan Perubahan Desain Editorial (Revert)
 
 ### Pemulihan Status Kerja
