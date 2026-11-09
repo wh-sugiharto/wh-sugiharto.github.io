@@ -2,6 +2,16 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Berhasil Push ke GitHub dan Catatan Penamaan Repositori
+
+### Status Push
+- Pengunggahan seluruh kode proyek berhasil dilakukan ke repositori remote `https://github.com/wh-sugiharto/wh-sugiharto.github.io..git` pada branch `main`.
+- Seluruh berkas (antarmuka Bootstrap, basis data JSON, logika JavaScript, dan dokumentasi) kini telah tersedia di GitHub.
+
+### Catatan Penting Terkait Konvensi GitHub Pages
+- Repositori remote saat ini memiliki nama dengan tanda titik di akhir: `wh-sugiharto.github.io.`.
+- Agar situs dapat diakses langsung pada domain utama `https://wh-sugiharto.github.io` (bukan sub-path atau mengalami galat rute), disarankan untuk mengubah nama repositori di menu Settings GitHub menjadi `wh-sugiharto.github.io` (tanpa tanda titik).
+
 ## [2026-11-09] - Verifikasi Remote Repository dan Pengujian Lokal
 
 ### Temuan Verifikasi Remote GitHub
