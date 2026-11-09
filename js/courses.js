@@ -54,22 +54,31 @@ function renderCourses(courses) {
         .map((t) => `<span class="badge topic-badge me-1 mb-1">${escapeHtml(t)}</span>`)
         .join("");
 
-      // Tombol tautan repositori perkuliahan
+      // Tombol tautan repositori materi perkuliahan
       const repoButton = course.repoUrl
-        ? `<a href="${escapeHtml(course.repoUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark">
-             <i class="bi bi-github me-1"></i> Course Repository
+        ? `<a href="${escapeHtml(course.repoUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2 mb-1">
+             <i class="bi bi-github me-1"></i> Course Materials (${escapeHtml(course.code)})
            </a>`
         : "";
 
-      // Tombol tautan silabus perkuliahan
+      // Tombol repositori induk bersama jika ada
+      const mainRepoButton = course.mainRepoUrl
+        ? `<a href="${escapeHtml(course.mainRepoUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary me-2 mb-1">
+             <i class="bi bi-folder2-open me-1"></i> Main Repository (emb_sys_umk)
+           </a>`
+        : "";
+
+      // Tombol tautan silabus perkuliahan jika ada
       const syllabusButton = course.syllabusUrl
-        ? `<a href="${escapeHtml(course.syllabusUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary ms-2">
+        ? `<a href="${escapeHtml(course.syllabusUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary mb-1">
              <i class="bi bi-file-earmark-text me-1"></i> Syllabus
            </a>`
         : "";
 
       // Status mata kuliah aktif atau arsip
       const statusClass = course.status === "Active" ? "bg-success" : "bg-secondary";
+      const creditsBadge = course.credits ? `<span class="badge bg-info-subtle text-info-emphasis border border-info-subtle me-2">${escapeHtml(course.credits)}</span>` : "";
+      const typeBadge = course.type ? `<span class="badge bg-light text-dark border me-2">${escapeHtml(course.type)}</span>` : "";
 
       return `
         <div class="card item-card mb-3">
@@ -77,6 +86,8 @@ function renderCourses(courses) {
             <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
               <div>
                 <span class="badge bg-primary text-uppercase me-2">${escapeHtml(course.code)}</span>
+                ${creditsBadge}
+                ${typeBadge}
                 <span class="badge ${statusClass} me-2">${escapeHtml(course.status || "Active")}</span>
                 <span class="text-muted small">${escapeHtml(course.term)} (${escapeHtml(course.level)})</span>
               </div>
@@ -84,8 +95,9 @@ function renderCourses(courses) {
             <h5 class="card-title text-dark mb-2">${escapeHtml(course.title)}</h5>
             <p class="card-text text-secondary mb-3">${escapeHtml(course.description)}</p>
             <div class="mb-3">${topicsHtml}</div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center flex-wrap">
               ${repoButton}
+              ${mainRepoButton}
               ${syllabusButton}
             </div>
           </div>
@@ -110,6 +122,7 @@ function setupCourseFilters() {
       const matchQuery =
         course.title.toLowerCase().includes(query) ||
         course.code.toLowerCase().includes(query) ||
+        (course.type && course.type.toLowerCase().includes(query)) ||
         course.description.toLowerCase().includes(query) ||
         (course.topics || []).some((topic) => topic.toLowerCase().includes(query));
 

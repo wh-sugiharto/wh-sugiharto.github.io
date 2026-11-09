@@ -2,6 +2,15 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Penyesuaian Mata Kuliah yang Diampu (1 Repo, 2 MK)
+
+### Pembaruan Data Perkuliahan (`data/courses.json`)
+- Menyesuaikan data perkuliahan sesuai informasi aktual yang diampu pada repositori tunggal `https://github.com/wh-sugiharto/emb_sys_umk`:
+  1. **IFE307 - Embedded System**: 2 SKS, Tipe Teori. Tautan modul: `https://github.com/wh-sugiharto/emb_sys_umk/blob/main/IFE307_Embedded_System`.
+  2. **IFE309 - Praktikum Embedded System**: 2 SKS, Tipe Praktikum. Tautan modul: `https://github.com/wh-sugiharto/emb_sys_umk/blob/main/IFE309_Praktikum_Embedded_System`.
+- Menambahkan atribut `credits` (SKS) dan `type` (Theory / Laboratory) serta merender badge informasi tersebut pada halaman `courses.html` dan ringkasan beranda `index.html`.
+- Menyediakan tombol aksi ganda: tautan langsung ke folder materi masing-masing MK dan tautan ke repositori induk `emb_sys_umk`.
+
 ## [2026-11-09] - Pembaruan Tautan Profil Akademik ke Scopus
 
 ### Perubahan Tautan Eksternal

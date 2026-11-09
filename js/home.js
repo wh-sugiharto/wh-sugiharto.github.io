@@ -70,12 +70,16 @@ async function loadActiveCourses() {
         <div class="card item-card mb-2">
           <div class="card-body p-3">
             <div class="d-flex justify-content-between align-items-center mb-1">
-              <span class="badge bg-primary text-uppercase">${escapeHtml(c.code)}</span>
+              <div>
+                <span class="badge bg-primary text-uppercase me-1">${escapeHtml(c.code)}</span>
+                ${c.credits ? `<span class="badge bg-info-subtle text-info-emphasis border border-info-subtle me-1">${escapeHtml(c.credits)}</span>` : ""}
+                ${c.type ? `<span class="badge bg-light text-dark border">${escapeHtml(c.type)}</span>` : ""}
+              </div>
               <span class="text-muted small">${escapeHtml(c.term)}</span>
             </div>
             <h6 class="fw-bold text-dark mb-1">${escapeHtml(c.title)}</h6>
             <p class="text-secondary small mb-2 text-truncate">${escapeHtml(c.description)}</p>
-            ${c.repoUrl ? `<a href="${escapeHtml(c.repoUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark py-0 px-2 small"><i class="bi bi-github"></i> Repository</a>` : ""}
+            ${c.repoUrl ? `<a href="${escapeHtml(c.repoUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark py-0 px-2 small"><i class="bi bi-github"></i> Course Materials</a>` : ""}
           </div>
         </div>
       `)
