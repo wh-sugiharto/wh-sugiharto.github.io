@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata halaman dan viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae | Dr. Wibowo Harry Sugiharto</title>
+
+  <!-- Pustaka Bootstrap 5 dan Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Gaya kustom situs -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Gaya khusus pencetakan dokumen CV -->
+  <style>
+    @media print {
+      nav, footer, .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 11pt;
+      }
+      .card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+      .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+    }
+    .cv-section-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.35rem;
+      margin-top: 1.75rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .pub-item {
+      margin-bottom: 0.85rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi Utama -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand profile-brand-name" href="index.html">Academic Profile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="theses.html">Supervised Theses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="cv.html">CV</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Utama: Curriculum Vitae -->
+  <main class="container my-4 my-md-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 no-print flex-wrap gap-2">
+      <div>
+        <h1 class="h3 fw-bold text-dark mb-0">Curriculum Vitae</h1>
+        <p class="text-secondary small mb-0">Academic curriculum vitae and publication record.</p>
+      </div>
+      <div>
+        <button onclick="window.print()" class="btn btn-sm btn-outline-dark">
+          <i class="bi bi-printer me-1"></i> Print / Save as PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Lembar CV -->
+    <div class="card p-4 p-md-5 border bg-white shadow-sm">
+      <!-- Bagian Header Profil -->
+      <div class="text-center mb-4">
+        <h2 class="h3 fw-bold text-dark mb-1">Dr. Wibowo Harry Sugiharto</h2>
+        <p class="text-secondary mb-1">Department of Informatics Engineering, Universitas Muria Kudus</p>
+        <p class="text-muted small mb-2">Jl. Lingkar Utara, Gondangmanis, Bae, Kudus, Central Java 59352, Indonesia</p>
+        <p class="small mb-0">
+          <span><strong>Email:</strong> wibowo.harrys [at] umk.ac.id</span>
+          <span class="mx-2 text-muted">&bull;</span>
+          <span><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-5940-0805" target="_blank" rel="noopener noreferrer">0000-0002-5940-0805</a></span>
+        </p>
+      </div>
+
+      <!-- Bagian Research Interests -->
+      <h3 class="cv-section-title">Research Interests</h3>
+      <ul class="mb-3 text-secondary">
+        <li>Environmental monitoring and water quality assessment</li>
+        <li>IoT systems and real-time sensor networks</li>
+        <li>Machine learning and deep learning for environmental applications</li>
+        <li>Physics-informed AI and explainable machine learning</li>
+        <li>Spatio-temporal modeling and graph neural networks</li>
+      </ul>
+
+      <!-- Bagian Academic Qualifications -->
+      <h3 class="cv-section-title">Academic Qualifications</h3>
+      <div class="table-responsive mb-3">
+        <table class="table table-bordered table-sm align-middle">
+          <thead class="table-light">
+            <tr>
+              <th style="width: 15%;">Degree</th>
+              <th style="width: 45%;">Institution</th>
+              <th style="width: 25%;">Field</th>
+              <th style="width: 15%;">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ph.D.</strong></td>
+              <td>Universitas Diponegoro, Semarang, Indonesia</td>
+              <td>Information Systems</td>
+              <td>2020 - 2025</td>
+            </tr>
+            <tr>
+              <td><strong>M.Sc.</strong></td>
+              <td>Universitas Diponegoro, Semarang, Indonesia</td>
+              <td>Information Systems</td>
+              <td>2014 - 2016</td>
+            </tr>
+            <tr>
+              <td><strong>B.Sc.</strong></td>
+              <td>Universitas Semarang, Semarang, Indonesia</td>
+              <td>Informatics Engineering</td>
+              <td>2009 - 2013</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card bg-light border-0 p-3 mb-3">
+        <p class="small mb-1">
+          <strong>Doctoral Dissertation:</strong> <em>An IoT-Based Water Quality Index for Monitoring Framework in Mitigation and Early Detection of Pollution</em>
+        </p>
+        <p class="small text-muted mb-0">
+          <strong>Supervisor:</strong> Prof. Dr.rer.nat. Ir. Heru Susanto, S.T., M.M., M.T.
+        </p>
+      </div>
+
+      <!-- Bagian Employment -->
+      <h3 class="cv-section-title">Employment</h3>
+      <div class="table-responsive mb-2">
+        <table class="table table-bordered table-sm align-middle">
+          <thead class="table-light">
+            <tr>
+              <th style="width: 20%;">Position</th>
+              <th style="width: 60%;">Institution</th>
+              <th style="width: 20%;">Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Lecturer</strong></td>
+              <td>Department of Informatics Engineering, Universitas Muria Kudus, Indonesia</td>
+              <td>2016 - Present</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small text-secondary mb-3">
+        <strong>Responsibilities:</strong> Teaching and supervising undergraduate students; conducting research on IoT-based monitoring and embedded AI systems.
+      </p>
+
+      <!-- Bagian Research Experience -->
+      <h3 class="cv-section-title">Research Experience</h3>
+      <div class="mb-3">
+        <div class="mb-3">
+          <h6 class="fw-bold mb-1">1. IoT-Based Water Quality Index Framework (Doctoral Research, 2020 - 2024)</h6>
+          <p class="small text-secondary mb-0">
+            Developed a novel IoT-WQI framework using Gaussian and polynomial curve fitting for real-time water quality classification. Achieved 97.54% accuracy and 83.55% faster computation than conventional methods. Field-deployed at Troso River, Jepara with 6,779 real-time data points recorded and zero data loss.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <h6 class="fw-bold mb-1">2. RF-PGA: Safety-Constrained AI for Water Quality (IEIF Collaboration, University of Adelaide, 2024 - 2025)</h6>
+          <p class="small text-secondary mb-0">
+            International collaboration with Dr. Wei Zeng (University of Adelaide, Australia). Developed a Random Forest model with Penalized Genetic Algorithm that embeds ecological safety constraints, reducing missed hazard alerts by 89.7% while maintaining real-time edge deployment capability. Manuscript in preparation.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <h6 class="fw-bold mb-1">3. XAI Dual-Layer Validation Framework (Collaboration, MMSU, Philippines, 2025)</h6>
+          <p class="small text-secondary mb-0">
+            Developed a Dual-Layer Validation framework for AI-based water quality models: (1) Operational Validation through predictive performance, and (2) Conceptual Validation through cross-architecture interpretability consensus. Manuscript in Under Review.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bagian Grants and Awards -->
+      <h3 class="cv-section-title">Grants and Awards</h3>
+      <div class="table-responsive mb-3">
+        <table class="table table-bordered table-sm align-middle">
+          <thead class="table-light">
+            <tr>
+              <th style="width: 50%;">Title</th>
+              <th style="width: 35%;">Organization</th>
+              <th style="width: 15%;">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IEIF International Research Collaboration Fellowship</td>
+              <td>Australian Department of Education</td>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <td>PKPT Competitive Research Award</td>
+              <td>Ministry of Education, Culture, Research, and Technology, Indonesia</td>
+              <td>2019 - 2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bagian Publications -->
+      <h3 class="cv-section-title">Publications</h3>
+
+      <h5 class="h6 fw-bold text-dark mt-3 mb-2">Peer-Reviewed Journal Articles</h5>
+      <ol class="ps-3 mb-3 text-secondary">
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, et al. (2026). "A Lightweight Hybrid ViT-GNN Framework for Data-Centric Land Cover Mapping in the Amazon Biome Using Graph Structural Priors." <em>Scientific Reports</em> (Nature Portfolio). DOI: <a href="https://www.doi.org/10.1038/s41598-026-59674-6" target="_blank" rel="noopener noreferrer">10.1038/s41598-026-59674-6</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Prasetijo, A.B., Susanto, H. (2026). "An Edge-IoT Water Quality Index (IoT-WQI) for First-Line Screening: Accelerating Computation via Deterministic Mathematical Equations and Grouped AHP." <em>Scientific Reports</em> (Nature Portfolio), July 2026. DOI: <a href="https://www.doi.org/10.1038/s41598-026-61061-0" target="_blank" rel="noopener noreferrer">10.1038/s41598-026-61061-0</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Prasetijo, A.B., Susanto, H. (2026). "Comparative Analysis of Feature Fusion Strategies in a Transformer Encoder, GNN Framework for Amazon Deforestation Detection." <em>Discover Artificial Intelligence</em> (Springer Nature), July 2026. DOI: <a href="https://www.doi.org/10.1007/s44163-026-01709-y" target="_blank" rel="noopener noreferrer">10.1007/s44163-026-01709-y</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Primadasa, R., Murti, A.C., Nindyasari, R., Susanto, H. (2026). "Graph-Informed Temporal Fusion Transformer (GIFT) for Spatio-Temporal Water Quality Classification." <em>Discover Artificial Intelligence</em> (Springer Nature). DOI: <a href="https://doi.org/10.1007/s44163-026-01966-x" target="_blank" rel="noopener noreferrer">10.1007/s44163-026-01966-x</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, et al. (2026). "Explainable AI with Dual-Layer Validation Framework for Ensuring Noise Resilience and Physical Consistency in Low-Cost Sustainable Water Quality Monitoring." <em>Discover Sustainability</em> (Springer Nature). DOI: <a href="https://doi.org/10.1007/s43621-026-04210-9" target="_blank" rel="noopener noreferrer">10.1007/s43621-026-04210-9</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Bardadi, A., Ghozali, M.I., Sukri, H., Murti, A.C. (2026). "Time-series visibility graph and histogram-based gradient boosting regressor (TSVG-HGBR) for robust multi-horizon urban carbon monoxide forecasting." <em>Discover Artificial Intelligence</em> (Springer Nature), Vol. 6, article no. 1207. DOI: <a href="https://doi.org/10.1007/s44163-026-02286-w" target="_blank" rel="noopener noreferrer">10.1007/s44163-026-02286-w</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Susanto, H., Prasetijo, A.B. (2025). "Evaluating Polynomial and Gaussian Fitting Techniques for Accurate Sub-Index pH Modeling in Water Quality Index Development." <em>Discover Water</em> (Springer Nature), Vol. 5, No. 1. DOI: <a href="https://doi.org/10.1007/s43832-025-00246-6" target="_blank" rel="noopener noreferrer">10.1007/s43832-025-00246-6</a>
+        </li>
+        <li class="pub-item">
+          Bardadi, A., Warsito, B., Surarso, B., <strong>Sugiharto, W.H.</strong> (2025). "Interval Type-2 Fuzzy C-Means (IT2FCM) for Robust Forecasting of Carbon Monoxide Concentrations in Urban Air Quality Monitoring." <em>Mathematical Modelling of Engineering Problems</em>, Vol. 12, No. 6, pp. 2021-2030. DOI: <a href="https://doi.org/10.18280/mmep.120617" target="_blank" rel="noopener noreferrer">10.18280/mmep.120617</a>
+        </li>
+        <li class="pub-item">
+          Bardadi, A., Warsito, B., Surarso, B., <strong>Sugiharto, W.H.</strong> (2025). "Managing Partitioning Uncertainty and Transition Ambiguity in Fuzzy Time Series: A Robust IT2FCM-Markov Chain Approach." <em>Mathematical Modelling of Engineering Problems</em>, Vol. 12, No. 12, pp. 4406-4412. DOI: <a href="https://doi.org/10.18280/mmep.121229" target="_blank" rel="noopener noreferrer">10.18280/mmep.121229</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Susanto, H., Prasetijo, A.B. (2024). "Evaluating Polynomial and Gaussian Approaches for Temperature Change Sub Index of Water Quality Index for Smart Environmental Management." <em>Mathematical Modelling of Engineering Problems</em>, Vol. 11, No. 9, pp. 2425-2436. DOI: <a href="https://doi.org/10.18280/mmep.110915" target="_blank" rel="noopener noreferrer">10.18280/mmep.110915</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Susanto, H., Prasetijo, A.B. (2024). "Selecting IoT-Enabled Water Quality Index Parameters for Smart Environmental Management." <em>Instrumentation Mesure Métrologie</em>, Vol. 23, No. 4, pp. 253-263. DOI: <a href="https://doi.org/10.18280/i2m.230401" target="_blank" rel="noopener noreferrer">10.18280/i2m.230401</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Susanto, H., Prasetijo, A.B. (2023). "Real-Time Water Quality Assessment via IoT: Monitoring pH, TDS, Temperature, and Turbidity." <em>Ingénierie des Systèmes d'Information</em>, Vol. 28, No. 4, pp. 823-831. DOI: <a href="https://doi.org/10.18280/isi.280403" target="_blank" rel="noopener noreferrer">10.18280/isi.280403</a>
+        </li>
+      </ol>
+
+      <h5 class="h6 fw-bold text-dark mt-3 mb-2">Conference Proceedings</h5>
+      <ol class="ps-3 mb-3 text-secondary" start="13">
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, et al. (2021). "Online Monitoring of Water Pollution Level Based on Dissolved Oxygen (DO) and Biochemical Oxygen Demand (BOD) Using Wireless Sensor System." <em>Journal of Physics: Conference Series</em>, Vol. 1943, No. 1, 012016. DOI: <a href="https://doi.org/10.1088/1742-6596/1943/1/012016" target="_blank" rel="noopener noreferrer">10.1088/1742-6596/1943/1/012016</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, et al. (2021). "Online Pollution Level Measurement for Water Quality Monitoring System Using Internet of Things." <em>Advances in Engineering Research</em>, Proceedings of ICIST 2020. DOI: <a href="https://doi.org/10.2991/aer.k.211129.004" target="_blank" rel="noopener noreferrer">10.2991/aer.k.211129.004</a>
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Riadi, A.A., Ghozali, M.I. (2018). "Web Based Information System of Carbon Monoxide Pollution." <em>E3S Web of Conferences</em>, Vol. 73, 05026. DOI: <a href="https://doi.org/10.1051/e3sconf/20187305026" target="_blank" rel="noopener noreferrer">10.1051/e3sconf/20187305026</a>
+        </li>
+      </ol>
+
+      <h5 class="h6 fw-bold text-dark mt-3 mb-2">Manuscripts Under Review / With Editor</h5>
+      <ul class="ps-3 mb-3 text-secondary">
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, et al. "Forecasting Urban Carbon Monoxide Concentrations Using a Hybrid ResNet Transformer with STL Decomposition." <em>Discover Sustainability</em>. Status: With Editor.
+        </li>
+        <li class="pub-item">
+          <strong>Sugiharto, W.H.</strong>, Zeng, W., et al. "RF-PGA: Random Forest with Penalized Genetic Algorithm for Edge-Based Water Quality Screening." <em>Discover Sustainability</em>. Status: With Editor.
+        </li>
+      </ul>
+
+      <!-- Bagian Technical Skills -->
+      <h3 class="cv-section-title">Technical Skills</h3>
+      <div class="table-responsive mb-3">
+        <table class="table table-bordered table-sm align-middle">
+          <thead class="table-light">
+            <tr>
+              <th style="width: 30%;">Category</th>
+              <th style="width: 70%;">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Programming</strong></td>
+              <td>Python, PHP, C++, JavaScript</td>
+            </tr>
+            <tr>
+              <td><strong>AI/ML Frameworks</strong></td>
+              <td>PyTorch, PyTorch Geometric, Scikit-learn, HuggingFace Transformers</td>
+            </tr>
+            <tr>
+              <td><strong>Explainability & Optimization</strong></td>
+              <td>SHAP, Optuna, Penalized Genetic Algorithm (PGA)</td>
+            </tr>
+            <tr>
+              <td><strong>Deep Learning Architectures</strong></td>
+              <td>Vision Transformer (ViT), Graph Neural Network (GNN), Temporal Fusion Transformer (TFT), ResNet</td>
+            </tr>
+            <tr>
+              <td><strong>IoT / Embedded</strong></td>
+              <td>Raspberry Pi, ESP32, Arduino, NodeMCU, LattePanda</td>
+            </tr>
+            <tr>
+              <td><strong>Research Domains</strong></td>
+              <td>Physics-informed AI, spatio-temporal environmental modeling, IoT-based water quality monitoring, remote sensing & land cover classification, edge computing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bagian Professional Affiliations -->
+      <h3 class="cv-section-title">Professional Affiliations</h3>
+      <ul class="mb-3 text-secondary">
+        <li>Member, Indonesian Association for Information and Computing Technology (APTIKOM)</li>
+        <li>Member, Institution of Engineers Indonesia (PII), IPP Level</li>
+        <li>Contributor, Industrial Instrumentation System Research Center, Universitas Diponegoro</li>
+        <li>Member, Institute of Electrical and Electronics Engineers (IEEE)</li>
+        <li>Member, IEEE Computer Society</li>
+        <li>Member, IEEE Young Professionals</li>
+        <li>Member, IEEE Indonesian Section</li>
+      </ul>
+
+      <!-- Bagian Language Proficiency -->
+      <h3 class="cv-section-title">Language Proficiency</h3>
+      <div class="table-responsive mb-0">
+        <table class="table table-bordered table-sm align-middle">
+          <thead class="table-light">
+            <tr>
+              <th style="width: 28%;">Language</th>
+              <th style="width: 18%;">Reading</th>
+              <th style="width: 18%;">Writing</th>
+              <th style="width: 18%;">Listening</th>
+              <th style="width: 18%;">Speaking</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Indonesian</strong></td>
+              <td>Native</td>
+              <td>Native</td>
+              <td>Native</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td><strong>English</strong></td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td><strong>Japanese</strong></td>
+              <td>Beginner</td>
+              <td>Beginner</td>
+              <td>Beginner</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Situs -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Academic Profile</span>. Hosted via GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Skrip JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

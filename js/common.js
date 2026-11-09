@@ -80,7 +80,26 @@ function populateProfileData(profile) {
   setLinkHref("link-scholar", profile.googleScholar);
   setLinkHref("link-orcid", profile.orcid);
   setLinkHref("link-linkedin", profile.linkedin);
-  setLinkHref("link-email", profile.email ? `mailto:${profile.email}` : "");
+
+  // Penanganan email anti spam
+  const emailLink = document.getElementById("link-email");
+  if (emailLink && profile.email) {
+    if (profile.email.includes("[at]")) {
+      emailLink.href = "javascript:void(0)";
+      emailLink.title = "Click to copy email address";
+      emailLink.onclick = () => {
+        const cleanEmail = profile.email.replace(/\s*\[at\]\s*/g, "@");
+        navigator.clipboard.writeText(cleanEmail).then(() => {
+          alert("Email copied to clipboard: " + cleanEmail);
+        });
+      };
+    } else {
+      emailLink.href = `mailto:${profile.email}`;
+    }
+    emailLink.classList.remove("d-none");
+  } else if (emailLink) {
+    emailLink.classList.add("d-none");
+  }
 }
 
 // Utilitas pembantu untuk mengatur atribut href
