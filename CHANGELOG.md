@@ -2,6 +2,13 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Penyelarasan Nomenklatur Domain Riset (Water, Air, Land)
+
+### Penyempurnaan Tampilan dan Data Riset (`research.html`, `data/research.json`, `js/research.js`)
+- Menyederhanakan penamaan pilar riset pada prolog `research.html` menjadi `1. Water`, `2. Air`, dan `3. Land` sesuai preferensi pengguna.
+- Menyelaraskan seluruh kategori pada basis data `data/research.json` dan urutan pengelompokan di `js/research.js` agar seragam menggunakan label `Water`, `Air`, dan `Land`.
+- Mengunggah seluruh pembaruan ke repositori remote GitHub.
+
 ## [2026-11-09] - Penambahan Prolog Penelitian dan Kategorisasi Portofolio 3 Domain (Water, Air, Land)
 
 ### Penataan Halaman Riset (`research.html`)

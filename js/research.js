@@ -36,7 +36,7 @@ function populateCategoryFilter(papers) {
   if (!select) return;
 
   // Prioritas urutan kategori penelitian: Water, Air, Land
-  const categoryOrder = ["Water (Air)", "Air (Udara)", "Land"];
+  const categoryOrder = ["Water", "Air", "Land"];
   const categories = Array.from(new Set(papers.map((p) => p.category)))
     .filter(Boolean)
     .sort((a, b) => {
@@ -86,7 +86,7 @@ function renderGroupedResearch(papers) {
   });
 
   // Mengurutkan grup
-  const categoryOrder = ["Water (Air)", "Air (Udara)", "Land"];
+  const categoryOrder = ["Water", "Air", "Land"];
   const groupKeys = Object.keys(grouped).sort((a, b) => {
     if (currentGroupBy === "year") {
       return Number(b) - Number(a); // Urutan tahun menurun
