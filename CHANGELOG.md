@@ -2,6 +2,13 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Pembaruan Tautan Profil Akademik ke Scopus
+
+### Perubahan Tautan Eksternal
+- Mengganti tautan Scholar pada kartu profil di `index.html` menjadi tautan resmi Scopus Author: `https://www.scopus.com/pages/authors/57210989011`.
+- Memperbarui `data/profile.json` dengan atribut `scopus` dan menyesuaikan logika pemuatan tautan di `js/common.js`.
+- Menambahkan rujukan Scopus ID (`57210989011`) pada tajuk dokumen di halaman `cv.html`.
+
 ## [2026-11-09] - Pembuatan Halaman CV Akademik dan Perlindungan Privasi
 
 ### Penambahan Halaman CV (`cv.html`)
@@ -28,16 +35,3 @@ Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkem
   - Penelitian (`research.html`): HTTP 200
   - Basis Data Statis (`data/profile.json`, `data/courses.json`, `data/theses.json`, `data/research.json`): HTTP 200
 - Seluruh sistem pencarian dinamis, filter kategori atau status, dan fitur ekspor BibTeX siap digunakan secara mandiri.
-
-## [2026-11-09] - Konfirmasi Pengubahan Nama Repositori
-
-### Verifikasi Status Repositori
-- Memverifikasi nama repositori resmi: `https://github.com/wh-sugiharto/wh-sugiharto.github.io` kini telah aktif (HTTP 200) tanpa tanda titik.
-- Memverifikasi remote git lokal terhubung secara tepat ke `https://github.com/wh-sugiharto/wh-sugiharto.github.io.git`.
-- Memeriksa ketersediaan domain `https://wh-sugiharto.github.io` yang saat ini menunggu aktivasi konfigurasi GitHub Pages dari menu Settings repository.
-
-## [2026-11-09] - Sinkronisasi Penuh ke GitHub dan Normalisasi Remote
-
-### Hasil Pengunggahan (Git Push)
-- Seluruh kode proyek, basis data JSON, berkas JavaScript, gaya CSS, dan dokumentasi telah berhasil dipush ke repositori GitHub `https://github.com/wh-sugiharto/wh-sugiharto.github.io.git` pada branch `main`.
-- Remote origin telah disetel ke URL resmi tanpa anomali karakter. Status working tree saat ini bersih (clean) dan sinkron dengan origin/main.

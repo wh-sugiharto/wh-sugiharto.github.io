@@ -77,6 +77,7 @@ function populateProfileData(profile) {
 
   // Memperbarui tautan media sosial dan akademik
   setLinkHref("link-github", profile.github);
+  setLinkHref("link-scopus", profile.scopus);
   setLinkHref("link-scholar", profile.googleScholar);
   setLinkHref("link-orcid", profile.orcid);
   setLinkHref("link-linkedin", profile.linkedin);
