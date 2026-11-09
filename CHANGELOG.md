@@ -2,6 +2,19 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Sinkronisasi Penuh ke GitHub dan Normalisasi Remote
+
+### Hasil Pengunggahan (Git Push)
+- Seluruh kode proyek, basis data JSON, berkas JavaScript, gaya CSS, dan dokumentasi telah berhasil dipush ke repositori GitHub `https://github.com/wh-sugiharto/wh-sugiharto.github.io.git` pada branch `main`.
+- Remote origin telah disetel ke URL resmi tanpa anomali karakter. Status working tree saat ini bersih (clean) dan sinkron dengan origin/main.
+
+### Langkah Aktivasi GitHub Pages
+1. Buka repositori `https://github.com/wh-sugiharto/wh-sugiharto.github.io` di peramban.
+2. Masuk ke menu **Settings** > **Pages**.
+3. Pastikan bagian **Build and deployment** > **Source** memilih opsi **Deploy from a branch**.
+4. Pilih branch `main` dan folder `/ (root)`, lalu klik tombol **Save**.
+5. Situs dapat diakses langsung pada alamat publik: `https://wh-sugiharto.github.io`.
+
 ## [2026-11-09] - Berhasil Push ke GitHub dan Catatan Penamaan Repositori
 
 ### Status Push
@@ -59,6 +72,6 @@ Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkem
    - `index.html`: Beranda dengan ringkasan bio profil dan navigasi cepat ke tiga menu utama.
    - `courses.html`: Halaman menu utama 1 untuk perkuliahan yang diampu.
    - `theses.html`: Halaman menu utama 2 untuk proyek skripsi bimbingan dan repositori mahasiswa.
-   - `research.html`: Halaman menu utama 3 untuk publikasi penelitian yang dikelompokkan.
+   - `research.html`: Halaman menu terbaik 3 untuk publikasi penelitian yang dikelompokkan.
 5. **Dokumentasi**:
    - `README.md`: Panduan struktur repositori, konfigurasi aktivasi GitHub Pages, dan tata cara pembaruan data.
