@@ -1,0 +1,54 @@
+[
+  {
+    "id": "pub-2024-01",
+    "title": "Empirical Evaluation of Automated Feedback Generation for Student Source Code",
+    "authors": ["Academic Name", "Co-author One", "Co-author Two"],
+    "venue": "IEEE Transactions on Education",
+    "year": 2024,
+    "category": "Computer Science Education",
+    "doi": "https://doi.org/10.1109/TE.2024.1234567",
+    "pdfUrl": "https://arxiv.org/pdf/2401.00000.pdf",
+    "codeUrl": "https://github.com/username/feedback-generation-benchmark",
+    "featured": true,
+    "bibtex": "@article{name2024feedback,\n  title={Empirical Evaluation of Automated Feedback Generation for Student Source Code},\n  author={Name, Academic and One, Co-author and Two, Co-author},\n  journal={IEEE Transactions on Education},\n  year={2024},\n  publisher={IEEE}\n}"
+  },
+  {
+    "id": "pub-2023-01",
+    "title": "Static Defect Detection in Novice Python Code via Abstract Syntax Forest Patterns",
+    "authors": ["Academic Name", "Co-author Three"],
+    "venue": "ACM Conference on Computer Science Education (SIGCSE)",
+    "year": 2023,
+    "category": "Computer Science Education",
+    "doi": "https://doi.org/10.1145/3545945.3569789",
+    "pdfUrl": "https://arxiv.org/pdf/2301.00000.pdf",
+    "codeUrl": "https://github.com/username/python-ast-defect-detector",
+    "featured": false,
+    "bibtex": "@inproceedings{name2023static,\n  title={Static Defect Detection in Novice Python Code via Abstract Syntax Forest Patterns},\n  author={Name, Academic and Three, Co-author},\n  booktitle={Proceedings of the 54th ACM Technical Symposium on Computer Science Education},\n  pages={112--118},\n  year={2023}\n}"
+  },
+  {
+    "id": "pub-2024-02",
+    "title": "Robustness of Quantized Neural Networks Against Domain Shift in Environmental Sensor Networks",
+    "authors": ["Co-author Four", "Academic Name"],
+    "venue": "Sensors and Actuators A: Physical",
+    "year": 2024,
+    "category": "Machine Learning and IoT",
+    "doi": "https://doi.org/10.1016/j.sna.2024.114999",
+    "pdfUrl": "https://arxiv.org/pdf/2402.00000.pdf",
+    "codeUrl": "https://github.com/username/quantized-sensor-robustness",
+    "featured": true,
+    "bibtex": "@article{four2024robustness,\n  title={Robustness of Quantized Neural Networks Against Domain Shift in Environmental Sensor Networks},\n  author={Four, Co-author and Name, Academic},\n  journal={Sensors and Actuators A: Physical},\n  year={2024},\n  publisher={Elsevier}\n}"
+  },
+  {
+    "id": "pub-2022-01",
+    "title": "Mining Software Repositories to Characterize Refactoring Smells in Microservice Architectures",
+    "authors": ["Academic Name", "Co-author Five"],
+    "venue": "Empirical Software Engineering (EMSE)",
+    "year": 2022,
+    "category": "Software Engineering",
+    "doi": "https://doi.org/10.1007/s10664-022-10111-x",
+    "pdfUrl": "https://arxiv.org/pdf/2201.00000.pdf",
+    "codeUrl": "https://github.com/username/microservices-refactoring-mining",
+    "featured": false,
+    "bibtex": "@article{name2022mining,\n  title={Mining Software Repositories to Characterize Refactoring Smells in Microservice Architectures},\n  author={Name, Academic and Five, Co-author},\n  journal={Empirical Software Engineering},\n  volume={27},\n  number={3},\n  pages={75},\n  year={2022}\n}"
+  }
+]

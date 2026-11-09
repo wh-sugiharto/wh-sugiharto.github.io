@@ -1,0 +1,50 @@
+[
+  {
+    "id": "th-2024-001",
+    "studentName": "Ahmad Fauzi",
+    "studentId": "200101501",
+    "title": "Automated Code Review Assistant Using Pre-trained Large Language Models",
+    "year": 2024,
+    "status": "Completed",
+    "abstract": "This study evaluates the performance of instruction tuned language models in detecting logic defects and style violations in student programming submissions, achieving an empirical F1 score of 0.84 on benchmark tasks.",
+    "repoUrl": "https://github.com/student-username/thesis-code-review-llm",
+    "demoUrl": "https://code-review-demo.example.edu",
+    "topics": ["Natural Language Processing", "Software Engineering", "LLM"]
+  },
+  {
+    "id": "th-2024-002",
+    "studentName": "Siti Nurhaliza",
+    "studentId": "200101518",
+    "title": "Real-Time Crop Disease Classification on Edge Computing Devices",
+    "year": 2024,
+    "status": "Completed",
+    "abstract": "Development of a lightweight convolutional neural network pipeline optimized for Raspberry Pi and mobile hardware to classify foliar diseases in tropical horticulture crops.",
+    "repoUrl": "https://github.com/student-username/edge-crop-disease-detection",
+    "demoUrl": "",
+    "topics": ["Computer Vision", "Edge Computing", "TensorFlow Lite"]
+  },
+  {
+    "id": "th-2024-003",
+    "studentName": "Budi Santoso",
+    "studentId": "200101533",
+    "title": "Decentralized Academic Credential Verification via Smart Contracts",
+    "year": 2024,
+    "status": "Completed",
+    "abstract": "An architectural prototype demonstrating tamper evident digital degree issuance and verification utilizing EVM compatible ledger technology with zero knowledge proofs.",
+    "repoUrl": "https://github.com/student-username/academic-credential-verifier",
+    "demoUrl": "https://credentials-demo.example.edu",
+    "topics": ["Blockchain", "Security", "Smart Contracts"]
+  },
+  {
+    "id": "th-2025-001",
+    "studentName": "Dewi Lestari",
+    "studentId": "210101602",
+    "title": "Adaptive Assessment Framework for Personalized Programming Pedagogy",
+    "year": 2025,
+    "status": "In Progress",
+    "abstract": "An investigation into Bayesian Knowledge Tracing algorithms to dynamically generate targeted programming exercises based on individual cognitive friction points.",
+    "repoUrl": "https://github.com/student-username/adaptive-assessment-framework",
+    "demoUrl": "",
+    "topics": ["EdTech", "Bayesian Modeling", "Learning Analytics"]
+  }
+]
