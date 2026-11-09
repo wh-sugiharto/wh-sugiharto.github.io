@@ -2,6 +2,13 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Verifikasi Remote Repository dan Pengujian Lokal
+
+### Temuan Verifikasi Remote GitHub
+- Melakukan verifikasi HTTP terhadap repositori tujuan: profil `https://github.com/wh-sugiharto` berstatus aktif (HTTP 200), namun repositori `wh-sugiharto.github.io` belum dibuat di GitHub (HTTP 404).
+- Mencatat bahwa repositori perlu dibuat terlebih dahulu di GitHub dengan nama persis `wh-sugiharto.github.io` (tanpa tanda titik di akhir nama repositori) dengan visibilitas Public agar fitur GitHub Pages aktif otomatis.
+- Menyediakan instruksi pengujian lokal via `python3 -m http.server` untuk meninjau tampilan di peramban sebelum push.
+
 ## [2026-11-09] - Personalisasi Profil dan Penambahan Fitur Dinamis Beranda
 
 ### Pembaruan Profil & Konfigurasi Repositori
