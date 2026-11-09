@@ -124,10 +124,30 @@ function renderGroupedResearch(papers) {
   container.innerHTML = html;
 }
 
+// Menentukan kelas tampilan lencana kuartil Scopus
+function getQuartileBadge(quartile) {
+  if (!quartile) return "";
+  let badgeClass = "bg-secondary-subtle text-secondary border";
+  if (quartile === "Q1") {
+    badgeClass = "bg-success-subtle text-success border border-success-subtle fw-semibold";
+  } else if (quartile === "Q2") {
+    badgeClass = "bg-primary-subtle text-primary border border-primary-subtle fw-semibold";
+  } else if (quartile === "Q3") {
+    badgeClass = "bg-warning-subtle text-warning-emphasis border border-warning-subtle fw-semibold";
+  } else if (quartile === "Q4") {
+    badgeClass = "bg-secondary-subtle text-secondary border border-secondary-subtle fw-semibold";
+  } else if (quartile === "No-Q") {
+    badgeClass = "bg-light text-muted border";
+  }
+  return `<span class="badge ${badgeClass} me-2 py-1 px-2"><i class="bi bi-award me-1"></i>${escapeHtml(quartile)}</span>`;
+}
+
 // Menghasilkan representasi HTML untuk sebuah kartu publikasi
 function renderPaperCard(paper) {
   const authorsStr = (paper.authors || []).join(", ");
   const bibtexId = `bibtex-${paper.id}`;
+
+  const quartileBadge = getQuartileBadge(paper.quartile);
 
   const doiLink = paper.doi
     ? `<a href="${escapeHtml(paper.doi)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary me-2">
@@ -173,6 +193,7 @@ function renderPaperCard(paper) {
           ${escapeHtml(paper.venue)} (${escapeHtml(paper.year)})
         </p>
         <div class="d-flex align-items-center flex-wrap gap-1 mt-2">
+          ${quartileBadge}
           ${doiLink}
           ${pdfLink}
           ${codeLink}
@@ -208,7 +229,8 @@ function setupResearchFilters() {
         paper.title.toLowerCase().includes(query) ||
         (paper.authors || []).some((author) => author.toLowerCase().includes(query)) ||
         (paper.venue && paper.venue.toLowerCase().includes(query)) ||
-        (paper.category && paper.category.toLowerCase().includes(query));
+        (paper.category && paper.category.toLowerCase().includes(query)) ||
+        (paper.quartile && paper.quartile.toLowerCase().includes(query));
 
       const matchCategory =
         selectedCategory === "all" ||

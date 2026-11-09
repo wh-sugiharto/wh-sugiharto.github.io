@@ -2,6 +2,17 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Penambahan Lencana Kuartil Scopus (Q1, Q2, Q3, Q4, No-Q) pada Publikasi
+
+### Peningkatan Visual dan Pencarian Publikasi (`data/research.json`, `js/research.js`)
+- Menambahkan atribut `quartile` pada seluruh 15 publikasi di `data/research.json`:
+  - Jurnal Springer Nature / Nature Portfolio ditetapkan sebagai `Q1` (Scientific Reports, Discover Artificial Intelligence, Discover Sustainability), kecuali Discover Water sebagai `No-Q`.
+  - Mathematical Modelling of Engineering Problems (MMEP) ditetapkan sebagai `Q2`.
+  - Instrumentation Mesure Métrologie (I2M) dan Ingénierie des Systèmes d'Information (ISI) ditetapkan sebagai `Q3`.
+  - Seluruh prosiding konferensi (JPCS, AER, E3S) ditetapkan sebagai `Q4`.
+- Menampilkan lencana kuartil bergradasi warna elegan tepat di samping tombol aksi DOI dan BibTeX pada setiap kartu publikasi (`js/research.js`).
+- Memperluas filter pencarian publikasi agar pengguna dapat menyaring makalah secara langsung dengan mengetikkan tingkat kuartil (misalnya "Q1", "Q2").
+
 ## [2026-11-09] - Penyelarasan Nomenklatur Domain Riset (Water, Air, Land)
 
 ### Penyempurnaan Tampilan dan Data Riset (`research.html`, `data/research.json`, `js/research.js`)
