@@ -2,6 +2,19 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-09] - Penambahan Prolog Penelitian dan Kategorisasi Portofolio 3 Domain (Water, Air, Land)
+
+### Penataan Halaman Riset (`research.html`)
+- Menambahkan kartu prolog di atas daftar publikasi yang menegaskan fokus penelitian utama: Internet of Things (IoT), monitoring lingkungan, dan asesmen kualitas lingkungan.
+- Merangkum 3 pilar riset dalam kartu terstruktur yang bersih:
+  1. **Water (Air)**: Telemetri sungai, pemodelan kurva sub-indeks, evaluasi fisikokimia (pH, DO, BOD, TDS, suhu, kekeruhan), serta perumusan deterministik Edge-IoT Water Quality Index (IoT-WQI).
+  2. **Air (Udara)**: Jaringan sensor terdistribusi karbon monoksida (CO), Interval Type-2 Fuzzy Logic, dan regresi Time-Series Visibility Graph untuk peramalan polutan udara perkotaan.
+  3. **Land**: Penginderaan jauh satelit, deteksi deforestasi hutan Amazon, dan kerangka kerja spasial hibrida Vision Transformer serta Graph Neural Network (ViT-GNN).
+
+### Pembaruan Basis Data dan Logika Penyaringan (`data/research.json`, `js/research.js`)
+- Mengklasifikasikan seluruh 15 publikasi ke dalam 3 kategori standar: `Water (Air)` (9 publikasi), `Air (Udara)` (4 publikasi), dan `Land` (2 publikasi).
+- Memperbarui algoritma pengelompokan dan dropdown filter di `js/research.js` agar secara konsisten mengurutkan domain riset sesuai prioritas utama: Water (Air), disusul Air (Udara), lalu Land.
+
 ## [2026-11-09] - Sinkronisasi Penulisan Nama Penulis Publikasi Sesuai CV
 
 ### Pembaruan Basis Data Publikasi (`data/research.json`)

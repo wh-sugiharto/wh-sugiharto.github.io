@@ -35,7 +35,19 @@ function populateCategoryFilter(papers) {
   const select = document.getElementById("filter-category");
   if (!select) return;
 
-  const categories = Array.from(new Set(papers.map((p) => p.category))).filter(Boolean).sort();
+  // Prioritas urutan kategori penelitian: Water, Air, Land
+  const categoryOrder = ["Water (Air)", "Air (Udara)", "Land"];
+  const categories = Array.from(new Set(papers.map((p) => p.category)))
+    .filter(Boolean)
+    .sort((a, b) => {
+      const idxA = categoryOrder.indexOf(a);
+      const idxB = categoryOrder.indexOf(b);
+      if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+      if (idxA !== -1) return -1;
+      if (idxB !== -1) return 1;
+      return a.localeCompare(b);
+    });
+
   categories.forEach((cat) => {
     const option = document.createElement("option");
     option.value = cat;
@@ -74,11 +86,17 @@ function renderGroupedResearch(papers) {
   });
 
   // Mengurutkan grup
+  const categoryOrder = ["Water (Air)", "Air (Udara)", "Land"];
   const groupKeys = Object.keys(grouped).sort((a, b) => {
     if (currentGroupBy === "year") {
       return Number(b) - Number(a); // Urutan tahun menurun
     }
-    return a.localeCompare(b); // Urutan abjad kategori
+    const idxA = categoryOrder.indexOf(a);
+    const idxB = categoryOrder.indexOf(b);
+    if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+    if (idxA !== -1) return -1;
+    if (idxB !== -1) return 1;
+    return a.localeCompare(b); // Urutan abjad cadangan
   });
 
   const html = groupKeys
