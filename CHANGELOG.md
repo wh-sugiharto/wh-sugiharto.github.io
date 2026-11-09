@@ -2,16 +2,11 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
-## [2026-11-09] - Perombakan Desain Minimalis Akademis & Negative Space
+## [2026-11-09] - Pembatalan Perubahan Desain Editorial (Revert)
 
-### Refactoring Tata Letak Editorial (Menghilangkan Kesan Card-in-Card AI)
-- Mengeliminasi kontainer kartu bertingkat (`card profile-card`, `card item-card`, lencana ikon berlingkar, dan kartu catatan sistem) yang sebelumnya memberi kesan kaku ala template generator AI.
-- Menerapkan konsep *negative space* (ruang bernafas) sejati ala situs personal akademisi universitas riset dunia (Stanford/MIT style):
-  - Mengatur batas lebar baca optimal (`max-width: 880px`) melalui kelas `.reading-container` agar garis mata nyaman.
-  - Meningkatkan *line-height* menjadi 1.7-1.8 untuk teks deskripsi dan biodata.
-  - Mengubah seluruh tampilan daftar publikasi, mata kuliah, dan skripsi bimbingan menjadi format artikel editorial (`.editorial-item`) tanpa batas kartu tebal.
-  - Menghilangkan bilah pencarian yang terbungkus kotak abu-abu tebal dan menggantinya dengan input bersih minimalis.
-- Menyinkronkan seluruh halaman (`index.html`, `courses.html`, `theses.html`, `research.html`, `cv.html`, `404.html`) ke dalam bahasa visual yang tenang dan lapang.
+### Pemulihan Status Kerja
+- Membatalkan perubahan desain layout editorial dan mengembalikan tata letak sesuai pilihan pengguna.
+- Menyinkronkan seluruh berkas lokal ke repositori remote GitHub.
 
 ## [2026-11-09] - Penambahan Peta Situs (Sitemap) dan Halaman Fallback 404
 

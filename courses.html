@@ -16,25 +16,25 @@
 <body>
 
   <!-- Navigasi Utama -->
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="reading-container d-flex justify-content-between align-items-center w-100">
-      <a class="navbar-brand profile-brand-name" href="index.html">Wibowo Harry Sugiharto</a>
-      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand profile-brand-name" href="index.html">Academic Profile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-        <ul class="navbar-nav mb-0">
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="courses.html">Teaching</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="theses.html">Theses</a>
+            <a class="nav-link" href="theses.html">Supervised Theses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cv.html">CV</a>
@@ -45,30 +45,51 @@
   </nav>
 
   <!-- Konten Utama: Menu Perkuliahan -->
-  <main class="reading-container my-4 my-md-5">
-    <div class="mb-4 pb-3 border-bottom">
-      <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
-        <h1 class="h3 fw-bold text-dark mb-1">Teaching & Courses</h1>
+  <main class="container my-4 my-md-5">
+    <div class="page-header">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div>
+          <h1 class="h3 fw-bold text-dark mb-1">Teaching and Courses</h1>
+          <p class="text-secondary mb-0">Courses taught with direct links to learning repositories and course materials.</p>
+        </div>
         <div id="course-count" class="text-muted small">Loading courses...</div>
       </div>
-      <p class="text-muted small mb-0">Courses taught with links to learning repositories and course materials.</p>
     </div>
 
-    <!-- Panel Pencarian yang Bersih -->
-    <div class="mb-4">
-      <input type="text" id="search-courses" class="search-bar-clean" placeholder="Search courses by code, title, or topic...">
+    <!-- Panel Filter dan Pencarian -->
+    <div class="card bg-light border-0 p-3 mb-4">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-8">
+          <div class="input-group">
+            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+            <input type="text" id="search-courses" class="form-control" placeholder="Search by course title, code, or topic...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <select id="filter-status" class="form-select">
+            <option value="all">All Courses</option>
+            <option value="active">Active Terms Only</option>
+            <option value="archived">Archived Terms Only</option>
+          </select>
+        </div>
+      </div>
     </div>
 
     <!-- Tempat Merender Daftar Perkuliahan dari data/courses.json -->
     <div id="courses-list">
-      <div class="text-muted py-4">Fetching course records...</div>
+      <div class="text-center py-5 text-muted">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2 mb-0">Fetching course records...</p>
+      </div>
     </div>
   </main>
 
   <!-- Footer Situs -->
   <footer>
-    <div class="reading-container text-center">
-      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Dr. Wibowo Harry Sugiharto</span>. Hosted via GitHub Pages.</p>
+    <div class="container text-center">
+      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Academic Profile</span>. Hosted via GitHub Pages.</p>
     </div>
   </footer>
 

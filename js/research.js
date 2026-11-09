@@ -90,12 +90,12 @@ function renderGroupedResearch(papers) {
       const papersHtml = groupPapers.map((paper) => renderPaperCard(paper)).join("");
 
       return `
-        <div class="mb-5">
-          <div class="section-subheading d-flex align-items-baseline gap-2 pb-1 border-bottom">
-            <span>${escapeHtml(groupKey)}</span>
-            <span class="text-muted small fw-normal">(${groupPapers.length})</span>
+        <div class="mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <h5 class="fw-bold text-dark mb-0">${escapeHtml(groupKey)}</h5>
+            <span class="badge bg-secondary-subtle text-secondary ms-2">${groupPapers.length}</span>
           </div>
-          <div>
+          <div class="ps-1">
             ${papersHtml}
           </div>
         </div>
@@ -112,20 +112,26 @@ function renderPaperCard(paper) {
   const bibtexId = `bibtex-${paper.id}`;
 
   const doiLink = paper.doi
-    ? `<a href="${escapeHtml(paper.doi)}" target="_blank" rel="noopener noreferrer">DOI</a>`
+    ? `<a href="${escapeHtml(paper.doi)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary me-2">
+         <i class="bi bi-link-45deg me-1"></i> DOI
+       </a>`
     : "";
 
   const pdfLink = paper.pdfUrl
-    ? `<a href="${escapeHtml(paper.pdfUrl)}" target="_blank" rel="noopener noreferrer">PDF</a>`
+    ? `<a href="${escapeHtml(paper.pdfUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-danger me-2">
+         <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+       </a>`
     : "";
 
   const codeLink = paper.codeUrl
-    ? `<a href="${escapeHtml(paper.codeUrl)}" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> Code</a>`
+    ? `<a href="${escapeHtml(paper.codeUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-2">
+         <i class="bi bi-github me-1"></i> Code Repository
+       </a>`
     : "";
 
   const bibtexBtn = paper.bibtex
-    ? `<button type="button" data-bs-toggle="collapse" data-bs-target="#${bibtexId}">
-         <i class="bi bi-quote"></i> BibTeX
+    ? `<button class="btn btn-sm btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#${bibtexId}">
+         <i class="bi bi-quote me-1"></i> BibTeX
        </button>`
     : "";
 
@@ -141,19 +147,22 @@ function renderPaperCard(paper) {
     : "";
 
   return `
-    <article class="editorial-item">
-      <div class="item-title">${escapeHtml(paper.title)}</div>
-      <div class="item-meta">
-        ${escapeHtml(authorsStr)} &bull; <em>${escapeHtml(paper.venue)}</em> (${escapeHtml(paper.year)})
+    <div class="card item-card mb-3">
+      <div class="card-body">
+        <h6 class="fw-bold text-dark mb-1">${escapeHtml(paper.title)}</h6>
+        <p class="text-secondary small mb-1">${escapeHtml(authorsStr)}</p>
+        <p class="text-muted small fst-italic mb-2">
+          ${escapeHtml(paper.venue)} (${escapeHtml(paper.year)})
+        </p>
+        <div class="d-flex align-items-center flex-wrap gap-1 mt-2">
+          ${doiLink}
+          ${pdfLink}
+          ${codeLink}
+          ${bibtexBtn}
+        </div>
+        ${bibtexBox}
       </div>
-      <div class="item-actions mt-2">
-        ${doiLink}
-        ${pdfLink}
-        ${codeLink}
-        ${bibtexBtn}
-      </div>
-      ${bibtexBox}
-    </article>
+    </div>
   `;
 }
 
