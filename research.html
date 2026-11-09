@@ -16,25 +16,25 @@
 <body>
 
   <!-- Navigasi Utama -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand profile-brand-name" href="index.html">Academic Profile</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="reading-container d-flex justify-content-between align-items-center w-100">
+      <a class="navbar-brand profile-brand-name" href="index.html">Wibowo Harry Sugiharto</a>
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="courses.html">Teaching</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="theses.html">Supervised Theses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="research.html">Research</a>
+            <a class="nav-link" href="theses.html">Theses</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cv.html">CV</a>
@@ -45,58 +45,46 @@
   </nav>
 
   <!-- Konten Utama: Menu Publikasi Penelitian -->
-  <main class="container my-4 my-md-5">
-    <div class="page-header">
-      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
-        <div>
-          <h1 class="h3 fw-bold text-dark mb-1">Research Publications</h1>
-          <p class="text-secondary mb-0">Peer-reviewed papers grouped by research topic with links to open access copies and code repositories.</p>
-        </div>
+  <main class="reading-container my-4 my-md-5">
+    <div class="mb-4 pb-3 border-bottom">
+      <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+        <h1 class="h3 fw-bold text-dark mb-1">Research Publications</h1>
         <div id="research-count" class="text-muted small">Loading publications...</div>
       </div>
+      <p class="text-muted small mb-0">Peer-reviewed journal articles and conference papers with open access links and code repositories.</p>
     </div>
 
-    <!-- Panel Kontrol: Pencarian, Filter Kategori, dan Mode Pengelompokan -->
-    <div class="card bg-light border-0 p-3 mb-4">
-      <div class="row g-2 align-items-center">
-        <div class="col-lg-5 col-md-12">
-          <div class="input-group">
-            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-            <input type="text" id="search-research" class="form-control" placeholder="Search by title, author, or venue...">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <select id="filter-category" class="form-select">
-            <option value="all">All Topics</option>
-          </select>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="btn-group w-100" role="group" aria-label="Group by options">
-            <input type="radio" class="btn-check" name="groupby" id="group-topic" value="category" checked autocomplete="off">
-            <label class="btn btn-outline-secondary btn-sm" for="group-topic">By Topic</label>
+    <!-- Panel Kontrol: Pencarian dan Mode Pengelompokan Bersih -->
+    <div class="row g-2 mb-4 align-items-center">
+      <div class="col-md-6">
+        <input type="text" id="search-research" class="search-bar-clean" placeholder="Search by title, author, or venue...">
+      </div>
+      <div class="col-md-3">
+        <select id="filter-category" class="form-select">
+          <option value="all">All Topics</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <div class="btn-group w-100" role="group" aria-label="Group by options">
+          <input type="radio" class="btn-check" name="groupby" id="group-topic" value="category" checked autocomplete="off">
+          <label class="btn btn-outline-secondary btn-sm" for="group-topic">By Topic</label>
 
-            <input type="radio" class="btn-check" name="groupby" id="group-year" value="year" autocomplete="off">
-            <label class="btn btn-outline-secondary btn-sm" for="group-year">By Year</label>
-          </div>
+          <input type="radio" class="btn-check" name="groupby" id="group-year" value="year" autocomplete="off">
+          <label class="btn btn-outline-secondary btn-sm" for="group-year">By Year</label>
         </div>
       </div>
     </div>
 
     <!-- Kontainer Publikasi yang Dikelompokkan dari data/research.json -->
     <div id="research-container">
-      <div class="text-center py-5 text-muted">
-        <div class="spinner-border text-dark" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <p class="mt-2 mb-0">Fetching publication list...</p>
-      </div>
+      <div class="text-muted py-4">Fetching publication list...</div>
     </div>
   </main>
 
   <!-- Footer Situs -->
   <footer>
-    <div class="container text-center">
-      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Academic Profile</span>. Hosted via GitHub Pages.</p>
+    <div class="reading-container text-center">
+      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Dr. Wibowo Harry Sugiharto</span>. Hosted via GitHub Pages.</p>
     </div>
   </footer>
 

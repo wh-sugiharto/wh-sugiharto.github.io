@@ -59,25 +59,25 @@
 <body>
 
   <!-- Navigasi Utama -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand profile-brand-name" href="index.html">Academic Profile</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="reading-container d-flex justify-content-between align-items-center w-100">
+      <a class="navbar-brand profile-brand-name" href="index.html">Wibowo Harry Sugiharto</a>
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="courses.html">Teaching</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="theses.html">Supervised Theses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="theses.html">Theses</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="cv.html">CV</a>
@@ -88,11 +88,11 @@
   </nav>
 
   <!-- Konten Utama: Curriculum Vitae -->
-  <main class="container my-4 my-md-5">
-    <div class="d-flex justify-content-between align-items-center mb-4 no-print flex-wrap gap-2">
+  <main class="reading-container my-4 my-md-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 no-print flex-wrap gap-2 pb-3 border-bottom">
       <div>
         <h1 class="h3 fw-bold text-dark mb-0">Curriculum Vitae</h1>
-        <p class="text-secondary small mb-0">Academic curriculum vitae and publication record.</p>
+        <p class="text-muted small mb-0">Academic curriculum vitae and publication record.</p>
       </div>
       <div>
         <button onclick="window.print()" class="btn btn-sm btn-outline-dark">
@@ -101,8 +101,8 @@
       </div>
     </div>
 
-    <!-- Lembar CV -->
-    <div class="card p-4 p-md-5 border bg-white shadow-sm">
+    <!-- Lembar CV Bersih -->
+    <div class="py-2">
       <!-- Bagian Header Profil -->
       <div class="text-center mb-4">
         <h2 class="h3 fw-bold text-dark mb-1">Dr. Wibowo Harry Sugiharto</h2>
@@ -405,8 +405,8 @@
 
   <!-- Footer Situs -->
   <footer>
-    <div class="container text-center">
-      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Academic Profile</span>. Hosted via GitHub Pages.</p>
+    <div class="reading-container text-center">
+      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Dr. Wibowo Harry Sugiharto</span>. Hosted via GitHub Pages.</p>
     </div>
   </footer>
 

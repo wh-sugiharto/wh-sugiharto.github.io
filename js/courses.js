@@ -75,33 +75,27 @@ function renderCourses(courses) {
            </a>`
         : "";
 
-      // Status mata kuliah aktif atau arsip
-      const statusClass = course.status === "Active" ? "bg-success" : "bg-secondary";
-      const creditsBadge = course.credits ? `<span class="badge bg-info-subtle text-info-emphasis border border-info-subtle me-2">${escapeHtml(course.credits)}</span>` : "";
-      const typeBadge = course.type ? `<span class="badge bg-light text-dark border me-2">${escapeHtml(course.type)}</span>` : "";
+      // Lencana kredit dan tipe
+      const creditsBadge = course.credits ? `<span class="minimal-badge">${escapeHtml(course.credits)}</span>` : "";
+      const typeBadge = course.type ? `<span class="minimal-badge">${escapeHtml(course.type)}</span>` : "";
 
       return `
-        <div class="card item-card mb-3">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-              <div>
-                <span class="badge bg-primary text-uppercase me-2">${escapeHtml(course.code)}</span>
-                ${creditsBadge}
-                ${typeBadge}
-                <span class="badge ${statusClass} me-2">${escapeHtml(course.status || "Active")}</span>
-                <span class="text-muted small">${escapeHtml(course.term)} (${escapeHtml(course.level)})</span>
-              </div>
-            </div>
-            <h5 class="card-title text-dark mb-2">${escapeHtml(course.title)}</h5>
-            <p class="card-text text-secondary mb-3">${escapeHtml(course.description)}</p>
-            <div class="mb-3">${topicsHtml}</div>
-            <div class="d-flex align-items-center flex-wrap">
-              ${repoButton}
-              ${mainRepoButton}
-              ${syllabusButton}
-            </div>
+        <article class="editorial-item">
+          <div class="d-flex align-items-baseline flex-wrap gap-2 mb-2">
+            <span class="minimal-badge">${escapeHtml(course.code)}</span>
+            ${creditsBadge}
+            ${typeBadge}
+            <span class="text-muted small">${escapeHtml(course.term)} (${escapeHtml(course.level)})</span>
           </div>
-        </div>
+          <div class="item-title">${escapeHtml(course.title)}</div>
+          <div class="item-description">${escapeHtml(course.description)}</div>
+          <div class="mb-3">${topicsHtml}</div>
+          <div class="item-actions">
+            ${repoButton}
+            ${mainRepoButton}
+            ${syllabusButton}
+          </div>
+        </article>
       `;
     })
     .join("");

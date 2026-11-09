@@ -1,115 +1,248 @@
 /*
  * style.css
- * Berkas gaya tambahan untuk melengkapi Bootstrap 5.3.
- * Mengutamakan keterbacaan tipografi dan tata letak akademis yang bersih.
+ * Sistem desain minimalis akademis dengan fokus pada negative space (ruang bernafas),
+ * hierarki tipografi editorial, dan eliminasi kontainer kartu bertingkat yang kaku.
  */
 
-/* Pengaturan dasar font dan variabel warna */
 :root {
-  --primary-color: #1a365d;
-  --secondary-color: #2b6cb0;
-  --text-color: #2d3748;
-  --bg-subtle: #f8fafc;
-  --border-color: #e2e8f0;
+  --text-main: #0f172a;       /* Warna teks utama: slate gelap */
+  --text-muted: #64748b;      /* Warna teks sekunder: abu-abu netral */
+  --accent-color: #0369a1;    /* Warna aksen: biru akademis yang tenang */
+  --border-subtle: #f1f5f9;   /* Garis pemisah tipis */
+  --border-hairline: #e2e8f0; /* Garis batas halus */
+  --bg-page: #ffffff;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: var(--text-color);
-  background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
 }
 
-main {
-  flex: 1;
+/* Lebar bacaan optimal untuk mata manusia */
+.reading-container {
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-/* Navigasi */
+/* Navigasi atas yang tenang dan tidak mendominasi */
 .navbar {
-  border-bottom: 1px solid var(--border-color);
   background-color: #ffffff !important;
+  border-bottom: 1px solid var(--border-hairline);
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
 }
 
 .navbar-brand {
   font-weight: 600;
-  color: var(--primary-color) !important;
-  letter-spacing: -0.01em;
+  font-size: 1.05rem;
+  color: var(--text-main) !important;
+  letter-spacing: -0.02em;
 }
 
 .nav-link {
-  font-weight: 500;
-  color: #4a5568 !important;
-  padding: 0.5rem 0.85rem !important;
+  font-size: 0.92rem;
+  color: var(--text-muted) !important;
+  padding: 0.4rem 0.85rem !important;
+  transition: color 0.15s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--secondary-color) !important;
+  color: var(--accent-color) !important;
 }
 
-/* Kartu profil di halaman beranda */
-.profile-card {
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  background-color: var(--bg-subtle);
+/* Bagian Hero dan Biodata: Lapang dan Alami tanpa Kotak Profil */
+.hero-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border-hairline);
 }
 
-/* Gaya kartu umum untuk perkuliahan, skripsi, dan publikasi */
-.item-card {
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
+.hero-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.hero-affiliation {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.hero-bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 1.75rem;
+  max-width: 760px;
+}
+
+/* Tautan Cepat Profil: Tipografi Bersih */
+.academic-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #475569;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
   background-color: #ffffff;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: all 0.15s ease;
 }
 
-.item-card:hover {
+.academic-links a:hover {
+  color: var(--accent-color);
   border-color: #cbd5e1;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background-color: #f8fafc;
 }
 
-/* Judul dan header bagian */
-.page-header {
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
+/* Judul Bagian Halaman */
+.section-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+  margin-top: 3.5rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.section-title {
-  font-size: 1.25rem;
+.section-subheading {
+  font-size: 1.15rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--text-main);
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-/* Tag dan lencana topik */
-.topic-badge {
-  background-color: #edf2f7;
-  color: #4a5568;
-  font-weight: 500;
-  font-size: 0.78rem;
-  border: 1px solid #e2e8f0;
+/* Item List Editorial: Menghilangkan Gaya Kotak Kartu */
+.editorial-item {
+  padding-top: 1.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.15s ease;
 }
 
-/* Blok BibTeX yang dapat disalin */
-.bibtex-box {
+.editorial-item:last-child {
+  border-bottom: none;
+}
+
+.item-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.45;
+  margin-bottom: 0.35rem;
+}
+
+.item-meta {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.item-description {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+/* Tautan Aksi Ringan */
+.item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.item-actions a,
+.item-actions button {
+  font-size: 0.82rem;
+  color: var(--accent-color);
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.item-actions a:hover,
+.item-actions button:hover {
   background-color: #f1f5f9;
-  border: 1px solid var(--border-color);
+  color: #0284c7;
+  border-color: #94a3b8;
+}
+
+/* Lencana Topik Minimalis */
+.minimal-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #475569;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-hairline);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Bilah Pencarian yang Bersih dan Terbuka */
+.search-bar-clean {
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  width: 100%;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.search-bar-clean:focus {
+  outline: none;
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 3px rgba(148, 163, 184, 0.15);
+}
+
+/* Kotak Kutipan BibTeX */
+.bibtex-box {
+  background-color: #f8fafc;
+  border: 1px solid var(--border-hairline);
   border-radius: 4px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.82rem;
-  padding: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 1rem;
   white-space: pre-wrap;
   word-break: break-all;
 }
 
-/* Footer halaman */
+/* Footer yang Bersih */
 footer {
-  border-top: 1px solid var(--border-color);
-  background-color: var(--bg-subtle);
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-  color: #718096;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
+  font-size: 0.88rem;
+  color: #94a3b8;
 }
-

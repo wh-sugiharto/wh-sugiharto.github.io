@@ -4,37 +4,37 @@
   <!-- Metadata halaman dan viewport -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Homepage</title>
+  <title>Dr. Wibowo Harry Sugiharto | Academic Homepage</title>
 
   <!-- Pustaka Bootstrap 5 dan Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-  <!-- Gaya kustom situs -->
+  <!-- Gaya kustom situs dengan penekanan pada negative space -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigasi Utama -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand profile-brand-name" href="index.html">Academic Profile</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Navigasi Atas yang Minimalis -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="reading-container d-flex justify-content-between align-items-center w-100">
+      <a class="navbar-brand profile-brand-name" href="index.html">Wibowo Harry Sugiharto</a>
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav mb-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="courses.html">Teaching</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="theses.html">Supervised Theses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="theses.html">Theses</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cv.html">CV</a>
@@ -44,164 +44,80 @@
     </div>
   </nav>
 
-  <!-- Konten Utama -->
-  <main class="container my-4 my-md-5">
-    <div class="row g-4">
-      <!-- Kolom Kiri: Profil Singkat -->
-      <div class="col-lg-4">
-        <div class="card profile-card p-4">
-          <div class="text-center mb-3" id="profile-avatar-container">
-            <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
-              <i class="bi bi-person-fill display-4"></i>
-            </div>
-          </div>
-          <h4 class="card-title text-center mb-1 fw-bold" id="profile-name">Academic Name</h4>
-          <p class="text-muted text-center small mb-2" id="profile-title">Lecturer and Researcher</p>
-          <p class="text-secondary small text-center mb-3" id="profile-institution">Department of Computer Science</p>
-          
-          <hr class="my-3">
-          
-          <p class="small text-secondary mb-3" id="profile-bio">
-            Lecturer and researcher focusing on Software Engineering, Data Science, and Machine Learning applications in higher education.
-          </p>
+  <!-- Konten Utama dalam Format Baca Editorial -->
+  <main class="reading-container">
 
-          <div class="small text-muted mb-3">
-            <i class="bi bi-geo-alt me-1"></i> <span id="profile-location">Indonesia</span>
-          </div>
+    <!-- Bagian Hero: Lapang, Tanpa Kotak Profil Buatan -->
+    <section class="hero-section">
+      <h1 class="hero-name" id="profile-name">Dr. Wibowo Harry Sugiharto</h1>
+      <p class="hero-affiliation">
+        <span id="profile-title">Lecturer & Researcher in Computer Engineering</span><br>
+        <span class="text-muted" id="profile-institution">Department of Informatics Engineering, Universitas Muria Kudus</span>
+      </p>
 
-          <div class="d-flex flex-wrap gap-2 justify-content-center">
-            <a id="link-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-dark" title="GitHub">
-              <i class="bi bi-github"></i> GitHub
-            </a>
-            <a id="link-scopus" href="https://www.scopus.com/pages/authors/57210989011" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary" title="Scopus Author Profile">
-              <i class="bi bi-journal-check"></i> Scopus
-            </a>
-            <a id="link-orcid" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success" title="ORCID">
-              <i class="bi bi-person-badge"></i> ORCID
-            </a>
-            <a href="cv.html" class="btn btn-sm btn-outline-dark" title="Curriculum Vitae">
-              <i class="bi bi-file-earmark-person"></i> CV
-            </a>
-          </div>
-        </div>
+      <p class="hero-bio" id="profile-bio">
+        Researcher focusing on IoT systems, real-time environmental monitoring, water quality assessment models (IoT-WQI), and explainable machine learning applications in environmental sensing.
+      </p>
+
+      <!-- Tautan Akademik Langsung -->
+      <div class="academic-links d-flex flex-wrap gap-2">
+        <a id="link-scopus" href="https://www.scopus.com/pages/authors/57210989011" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-journal-check"></i> Scopus
+        </a>
+        <a id="link-orcid" href="https://orcid.org/0000-0002-5940-0805" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-person-badge"></i> ORCID
+        </a>
+        <a id="link-github" href="https://github.com/wh-sugiharto" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="cv.html">
+          <i class="bi bi-file-earmark-person"></i> Full CV
+        </a>
+        <a id="link-email" href="javascript:void(0)" title="Click to copy email">
+          <i class="bi bi-envelope"></i> Email
+        </a>
       </div>
+    </section>
 
-      <!-- Kolom Kanan: Tiga Bagian Utama Portal dan Pratinjau -->
-      <div class="col-lg-8">
-        <div class="mb-4">
-          <h2 class="h4 fw-bold text-dark mb-2">Welcome</h2>
-          <p class="text-secondary">
-            This repository based website documents academic courses, undergraduate student thesis projects, and scientific research publications.
-          </p>
-        </div>
-
-        <!-- Tiga Kartu Navigasi Cepat -->
-        <div class="row g-3 mb-4">
-          <!-- Menu 1: Perkuliahan yang diampu -->
-          <div class="col-md-4">
-            <div class="card item-card h-100 p-3">
-              <div class="card-body p-0 d-flex flex-column">
-                <div class="text-primary mb-2">
-                  <i class="bi bi-journal-code fs-3"></i>
-                </div>
-                <h6 class="fw-bold mb-1">Teaching</h6>
-                <p class="small text-muted flex-grow-1 mb-3">
-                  Course syllabi with direct links to dedicated learning repositories.
-                </p>
-                <a href="courses.html" class="btn btn-sm btn-outline-primary mt-auto">
-                  View Courses
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Menu 2: Proyek Skripsi yang Dibimbing -->
-          <div class="col-md-4">
-            <div class="card item-card h-100 p-3">
-              <div class="card-body p-0 d-flex flex-column">
-                <div class="text-success mb-2">
-                  <i class="bi bi-mortarboard fs-3"></i>
-                </div>
-                <h6 class="fw-bold mb-1">Supervised Theses</h6>
-                <p class="small text-muted flex-grow-1 mb-3">
-                  Undergraduate thesis projects, abstracts, and open student code repositories.
-                </p>
-                <a href="theses.html" class="btn btn-sm btn-outline-success mt-auto">
-                  View Theses
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Menu 3: Publikasi dan Penelitian -->
-          <div class="col-md-4">
-            <div class="card item-card h-100 p-3">
-              <div class="card-body p-0 d-flex flex-column">
-                <div class="text-dark mb-2">
-                  <i class="bi bi-file-earmark-text fs-3"></i>
-                </div>
-                <h6 class="fw-bold mb-1">Research</h6>
-                <p class="small text-muted flex-grow-1 mb-3">
-                  Peer reviewed publications grouped by domain, with open access links and BibTeX.
-                </p>
-                <a href="research.html" class="btn btn-sm btn-outline-dark mt-auto">
-                  View Research
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pratinjau Sorotan Terbaru -->
-        <div class="row g-4 mb-4">
-          <!-- Publikasi Unggulan Terbaru -->
-          <div class="col-12">
-            <div class="d-flex justify-content-between align-items-center mb-2">
-              <h5 class="fw-bold text-dark mb-0">Featured Research</h5>
-              <a href="research.html" class="small text-decoration-none">All Publications</a>
-            </div>
-            <div id="home-featured-research">
-              <div class="text-muted small py-2">Loading highlights...</div>
-            </div>
-          </div>
-
-          <!-- Kolom Kembar: Kuliah Aktif dan Skripsi Terkini -->
-          <div class="col-md-6">
-            <div class="d-flex justify-content-between align-items-center mb-2">
-              <h6 class="fw-bold text-dark mb-0">Active Courses</h6>
-              <a href="courses.html" class="small text-decoration-none">View All</a>
-            </div>
-            <div id="home-active-courses">
-              <div class="text-muted small py-2">Loading active courses...</div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="d-flex justify-content-between align-items-center mb-2">
-              <h6 class="fw-bold text-dark mb-0">Recent Theses</h6>
-              <a href="theses.html" class="small text-decoration-none">View All</a>
-            </div>
-            <div id="home-recent-theses">
-              <div class="text-muted small py-2">Loading recent theses...</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Catatan Mengenai Sumber Data -->
-        <!-- <div class="card bg-light border-0 p-3">
-          <h6 class="fw-bold text-dark mb-1">Data Storage Note</h6>
-          <p class="small text-secondary mb-0">
-            All records on this site are stored in structured JSON files within the <code>data/</code> directory. You can add, edit, or remove entries directly through GitHub commits without recompiling binaries.
-          </p>
-        </div> -->
+    <!-- Bagian 1: Publikasi Penelitian Unggulan -->
+    <section>
+      <div class="d-flex justify-content-between align-items-baseline section-heading">
+        <span>Selected Research</span>
+        <a href="research.html" class="text-muted small text-decoration-none fw-normal">All 15 publications &rsaquo;</a>
       </div>
-    </div>
+      <div id="home-featured-research">
+        <div class="text-muted py-3">Loading research records...</div>
+      </div>
+    </section>
+
+    <!-- Bagian 2: Mata Kuliah yang Diampu -->
+    <section>
+      <div class="d-flex justify-content-between align-items-baseline section-heading">
+        <span>Current Teaching</span>
+        <a href="courses.html" class="text-muted small text-decoration-none fw-normal">Course materials &rsaquo;</a>
+      </div>
+      <div id="home-active-courses">
+        <div class="text-muted py-3">Loading teaching records...</div>
+      </div>
+    </section>
+
+    <!-- Bagian 3: Skripsi Mahasiswa Bimbingan -->
+    <section>
+      <div class="d-flex justify-content-between align-items-baseline section-heading">
+        <span>Supervised Theses</span>
+        <a href="theses.html" class="text-muted small text-decoration-none fw-normal">Student projects &rsaquo;</a>
+      </div>
+      <div id="home-recent-theses">
+        <div class="text-muted py-3">Loading thesis records...</div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Footer Situs -->
+  <!-- Footer yang Tenang -->
   <footer>
-    <div class="container text-center">
-      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Academic Profile</span>. Hosted via GitHub Pages.</p>
+    <div class="reading-container text-center">
+      <p class="mb-0">&copy; <span id="current-year">2026</span> <span id="footer-name">Dr. Wibowo Harry Sugiharto</span>. Hosted via GitHub Pages.</p>
     </div>
   </footer>
 

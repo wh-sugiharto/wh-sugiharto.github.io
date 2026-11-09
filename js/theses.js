@@ -90,27 +90,23 @@ function renderTheses(theses) {
         : "";
 
       return `
-        <div class="card item-card mb-3">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
-              <div>
-                <h6 class="mb-1 fw-bold text-dark">${escapeHtml(thesis.title)}</h6>
-                <div class="text-muted small">
-                  <strong>Student:</strong> ${escapeHtml(thesis.studentName)} 
-                  ${thesis.studentId ? `(${escapeHtml(thesis.studentId)})` : ""} 
-                  &bull; <strong>Year:</strong> ${escapeHtml(thesis.year)}
-                </div>
-              </div>
-              <div>${statusBadge}</div>
-            </div>
-            <p class="card-text text-secondary small mb-3">${escapeHtml(thesis.abstract)}</p>
-            <div class="mb-3">${topicsHtml}</div>
-            <div class="d-flex align-items-center">
-              ${repoButton}
-              ${demoButton}
-            </div>
+        <article class="editorial-item">
+          <div class="d-flex justify-content-between align-items-baseline flex-wrap gap-2 mb-1">
+            <div class="item-title mb-0">${escapeHtml(thesis.title)}</div>
+            <div>${statusBadge}</div>
           </div>
-        </div>
+          <div class="item-meta">
+            Student: <strong>${escapeHtml(thesis.studentName)}</strong>
+            ${thesis.studentId ? `(${escapeHtml(thesis.studentId)})` : ""} 
+            &bull; Year: ${escapeHtml(thesis.year)}
+          </div>
+          <div class="item-description">${escapeHtml(thesis.abstract)}</div>
+          <div class="mb-3">${topicsHtml}</div>
+          <div class="item-actions">
+            ${repoButton}
+            ${demoButton}
+          </div>
+        </article>
       `;
     })
     .join("");
