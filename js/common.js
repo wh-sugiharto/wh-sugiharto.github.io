@@ -40,21 +40,30 @@ function populateProfileData(profile) {
     currentYearSpan.textContent = new Date().getFullYear();
   }
 
-  // Menangani avatar foto profil jika tersedia
+  // Menangani avatar foto profil jika tersedia (object-position 50% 15% agar bagian atas kepala tidak terpotong)
   const avatarContainer = document.getElementById("profile-avatar-container");
   if (avatarContainer) {
     if (profile.avatarUrl && profile.avatarUrl.trim() !== "") {
       avatarContainer.innerHTML = `
-        <img src="${escapeHtml(profile.avatarUrl)}" alt="${escapeHtml(profile.name)}" 
-             class="rounded-circle img-thumbnail" style="width: 120px; height: 120px; object-fit: cover;">
+        <img src="${escapeHtml(profile.avatarUrl)}" alt="${escapeHtml(profile.name)}"
+             class="rounded-circle img-thumbnail bg-white" style="width: 160px; height: 160px; object-fit: cover; object-position: 50% 15%;">
       `;
     } else {
       avatarContainer.innerHTML = `
-        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 110px; height: 110px;">
+        <div class="bg-secondary-subtle text-secondary rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 160px; height: 160px;">
           <i class="bi bi-person-fill display-4"></i>
         </div>
       `;
     }
+  }
+
+  // Menangani foto formal pada halaman CV jika avatarUrl tersedia
+  const cvPhotoContainer = document.getElementById("cv-photo-container");
+  if (cvPhotoContainer && profile.avatarUrl && profile.avatarUrl.trim() !== "") {
+    cvPhotoContainer.innerHTML = `
+      <img src="${escapeHtml(profile.avatarUrl)}" alt="${escapeHtml(profile.name)}"
+           class="img-thumbnail bg-white" style="width: 150px; height: 195px; object-fit: cover; object-position: 50% 15%;">
+    `;
   }
 
   // Memperbarui elemen profil pada halaman indeks jika ada
