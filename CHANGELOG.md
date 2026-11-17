@@ -2,6 +2,9 @@
 
 Catatan ini mendokumentasikan setiap perubahan, keputusan arsitektur, dan perkembangan proyek homepage GitHub Pages.
 
+## [2026-11-18] - Pembaruan Header Google Scholar & Metrik CV (`cv.html`)
+- Menambahkan tautan profil `Google Scholar` (`51KWllsAAAAJ`), memperbarui label badge menjadi `Scopus Journal Articles: 17`, serta menambahkan badge `Google h-index: 7` pada bagian header `cv.html`.
+
 ## [2026-11-13] - Pembaruan CV Web, SDGs Focus, dan Perapihan Data Scopus
 
 ### Pembaruan CV Web & Profil (`cv.html`, `index.html`, `js/common.js`, `data/profile.json`, `assets/`)
